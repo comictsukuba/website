@@ -23,6 +23,11 @@ export const links: Route.LinksFunction = () => [
   },
 ];
 
+export const meta: Route.MetaFunction = () => [{
+  title: "コミックつくば！公式サイト",
+  description: "現在企画構想中のコミつく公式サイトです。",
+}];
+
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
