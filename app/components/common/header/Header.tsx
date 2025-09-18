@@ -9,7 +9,9 @@ export function Header(): JSX.Element {
 	return (
 		<header className="bg-white text-black px-6 shadow-md font-nav h-fit w-full">
 			<div className="w-full max-w-[1024px] h-20 mx-auto py-2 flex gap-8">
-				<img src={logoImg} alt="Logo Icon" className="h-full" />
+				<a href="/" className="h-full w-fit">
+					<img src={logoImg} alt="Logo Icon" className="h-full" />
+				</a>
 				<nav className="hidden md:flex gap-6 h-full items-center ml-6">
 					<ul className="contents">
 						<li className="h-full">
