@@ -6,6 +6,7 @@
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "website",
 	"compatibility_date": "2025-04-04",
+	"account_id": "147cc2e87b50cb79185952f076af9b95",
 	"main": "./workers/app.ts",
 	"vars": {
 		"VALUE_FROM_CLOUDFLARE": "Hello from Cloudflare"
