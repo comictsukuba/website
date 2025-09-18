@@ -22,7 +22,7 @@ export default function Index({ loaderData }: Route.ComponentProps): JSX.Element
 					{
 						icon: "library-big", label: "参加サークル数", value: (
 							<span className="flex flex-row items-baseline gap-1">
-								<BouncyNumber value="39" />
+								<BouncyNumber value="XX" />
 								サークル
 							</span>
 						)
