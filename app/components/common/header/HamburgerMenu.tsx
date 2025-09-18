@@ -46,13 +46,13 @@ export function HamburgerMenu(): JSX.Element {
 							<NavLinkItem to="/" handleClose={handleClose}>HOME</NavLinkItem>
 						</li>
 						<li className="h-fit">
+							<NavLinkItem to="/news" handleClose={handleClose}>お知らせ</NavLinkItem>
+						</li>
+						<li className="h-fit">
 							<NavLinkItem to="/about" handleClose={handleClose}>コミックつくばとは？</NavLinkItem>
 						</li>
 						<li className="h-fit">
-							<NavLinkItem to="/application" handleClose={handleClose}>参加案内</NavLinkItem>
-						</li>
-						<li className="h-fit">
-							<NavLinkItem to="/contact" handleClose={handleClose}>お問い合わせ</NavLinkItem>
+							<NavLinkItem isNew to="/events/001" handleClose={handleClose}>開催情報</NavLinkItem>
 						</li>
 					</ul>
 				</nav>
@@ -61,9 +61,10 @@ export function HamburgerMenu(): JSX.Element {
 	);
 }
 
-function NavLinkItem({ to, children, handleClose }: { to: string; children: React.ReactNode; handleClose: () => void }): JSX.Element {
+function NavLinkItem({ to, isNew = false, children, handleClose }: { to: string; isNew?: boolean; children: React.ReactNode; handleClose: () => void }): JSX.Element {
 	return (
-		<NavLink to={to} className="w-full h-full flex items-center justify-center relative px-4 py-4" onClick={handleClose}>
+		<NavLink to={to} className={`w-full h-full flex items-center justify-center relative px-4 py-4
+			${isNew && "after:content-['NEW'] after:absolute after:left-2 after:bg-red-500 after:text-white after:text-xs after:px-1.5 after:py-0.5 after:rounded-sm after:font-bold after:border-white after:border-2"}`} onClick={handleClose}>
 			{
 				({ isActive }) => (
 					<>
