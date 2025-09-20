@@ -15,7 +15,10 @@ export default [
 			route("3", "routes/news/3.tsx"),
 		]),
 		...prefix("events", [
-			route("001", "routes/events/001.tsx"),
+			...prefix("001", [
+				index("routes/events/001.tsx"),
+				route("catalog", "routes/events/001/catalog.tsx"),
+			])
 		])
-	]),
+	])
 ] satisfies RouteConfig;
