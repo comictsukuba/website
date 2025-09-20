@@ -34,7 +34,7 @@ export default function Route({ loaderData }: Route.ComponentProps) {
           <div className="text-center md:text-left flex flex-col items-center md:items-start space-y-6">
             <div className="space-y-4">
               <div className="mt-4 text-xl font-bold">DATE</div>
-              <div className="text-5xl font-bold">11月上旬開催予定</div>
+              <div className="text-5xl font-bold">雙峰祭（11月2日、3日）</div>
             </div>
             <div className="space-y-4">
               <div className="mt-4 text-xl font-bold">PLACE</div>
