@@ -25,16 +25,17 @@ export function Footer(): JSX.Element {
                 <div className="flex flex-row flex-wrap gap-x-8 gap-y-4">
                     <NavGroup title="◇" links={[
                         { label: "ホーム", href: "/" },
+                        { label: "お知らせ", href: "/news" },
                         { label: "コミックつくば！とは？", href: "/about" },
                         { label: "お問い合わせ", href: "/contact" },
                     ]} />
                     <NavGroup title="一般参加" links={[
-                        { label: "開催情報", href: "#" },
-                        { label: "カタログ", href: "#" },
+                        { label: "開催情報", href: "/events/001" },
+                        { label: "サークル一覧", href: "/events/001/catalog" },
                     ]} />
                     <NavGroup title="サークル参加" links={[
-                        { label: "出展案内", href: "#" },
-                        { label: "サークル参加申込", href: "#" },
+                        { label: "出展案内", href: "/exhibit" },
+                        { label: "サークル参加申込", href: "/application" },
                     ]} />
                 </div>
             </div>

@@ -26,7 +26,7 @@ export function Header(): JSX.Element {
 						</li>
 						<li className="h-full">
 							<NavLinkItem to="/about">
-								コミックつくば！とは
+								コミックつくば！とは？
 							</NavLinkItem>
 						</li>
 						<li className="h-full">
