@@ -4,7 +4,6 @@ export default [
 	layout("routes/common-layout.tsx", [
 		index("routes/home.tsx"),
 		route("about", "routes/about/_index.tsx"),
-		route("application", "routes/application/_index.tsx"),
 		route("exhibit", "routes/exhibit/_index.tsx"),
 		route("general", "routes/general/_index.tsx"),
 		route("contact", "routes/contact/_index.tsx"),

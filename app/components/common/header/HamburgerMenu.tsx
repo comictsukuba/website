@@ -52,7 +52,7 @@ export function HamburgerMenu(): JSX.Element {
 							<NavLinkItem to="/about" handleClose={handleClose}>コミックつくばとは？</NavLinkItem>
 						</li>
 						<li className="h-fit">
-							<NavLinkItem isNew to="/events/001" handleClose={handleClose}>開催情報</NavLinkItem>
+							<NavLinkItem isNew to="/events/CT1" handleClose={handleClose}>開催情報</NavLinkItem>
 						</li>
 					</ul>
 				</nav>

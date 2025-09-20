@@ -22,17 +22,17 @@ export default function Index({ loaderData }: Route.ComponentProps): JSX.Element
 					{ icon: "calendar", label: "日時", value: loaderData.date },
 					{ icon: "map-pin", label: "場所", value: loaderData.place },
 					{
-						icon: "library-big", label: "参加サークル数", value: (
+						icon: "library-big", label: "出展者／団体数", value: (
 							<span className="flex flex-row items-baseline gap-1">
 								<BouncyNumber value={loaderData.participantCount} />
-								サークル
+								人／団体
 							</span>
 						)
 					}
 				]} />
 				<div className="w-full h-[1px] bg-gray-300 border-full" />
 				<div className="w-full h-fit py-8 flex items-center justify-center">
-					<LargeLinkButton to={"./catalog"} label="サークル一覧はこちら" />
+					<LargeLinkButton to={"./catalog"} label="出展一覧はこちら" />
 				</div>
 				<Section heading="フロアマップ">
 					<div className="w-full aspect-video bg-gray-200" />

@@ -5,7 +5,7 @@ export default function Route(): JSX.Element {
 	return (
 		<div className="container mx-auto py-8 text-center">
 			<h1 className="text-3xl font-bold">
-				出展案内
+				出展参加申し込み
 			</h1>
 			<p>
 				第１回コミックつくば！の出展募集は締め切りました。<br />
