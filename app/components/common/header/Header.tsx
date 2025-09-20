@@ -30,7 +30,7 @@ export function Header(): JSX.Element {
 							</NavLinkItem>
 						</li>
 						<li className="h-full">
-							<NavLinkItem isNew to="/events/001">
+							<NavLinkItem isNew to="/events/CT1">
 								開催情報
 							</NavLinkItem>
 						</li>

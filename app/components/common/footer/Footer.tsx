@@ -30,8 +30,8 @@ export function Footer(): JSX.Element {
                         { label: "お問い合わせ", href: "/contact" },
                     ]} />
                     <NavGroup title="一般参加" links={[
-                        { label: "開催情報", href: "/events/001" },
-                        { label: "サークル一覧", href: "/events/001/catalog" },
+                        { label: "開催情報", href: "/events/CT1" },
+                        { label: "サークル一覧", href: "/events/CT1/catalog" },
                     ]} />
                     <NavGroup title="サークル参加" links={[
                         { label: "出展案内", href: "/exhibit" },

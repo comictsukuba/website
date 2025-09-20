@@ -2,8 +2,8 @@ import type { JSX } from "react";
 import { BouncyNumber } from "~/components/common/BouncyNumber";
 import { LargeLinkButton } from "~/components/common/button/LargeLinkButton";
 import { DataList } from "~/components/common/datalist/DataList";
-import type { Route } from "./+types/001";
 import { Section } from "~/components/common/Section";
+import type { Route } from "../+types/_index";
 
 export async function loader({ params }: Route.LoaderArgs): Promise<{ dates: Date[] }> {
 	return {
@@ -33,7 +33,7 @@ export default function Index({ loaderData }: Route.ComponentProps): JSX.Element
 					<LargeLinkButton to={"./catalog"} label="サークル一覧はこちら" />
 				</div>
 				<Section heading="フロアマップ">
-					<div className="w-full aspect-video bg-gray-200"/>
+					<div className="w-full aspect-video bg-gray-200" />
 				</Section>
 				<Section heading="注意事項">
 					<ul className="list-disc list-inside flex flex-col gap-1 pl-2">

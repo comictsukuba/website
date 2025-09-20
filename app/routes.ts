@@ -15,9 +15,9 @@ export default [
 			route("3", "routes/news/3.tsx"),
 		]),
 		...prefix("events", [
-			...prefix("001", [
-				index("routes/events/001.tsx"),
-				route("catalog", "routes/events/001/catalog.tsx"),
+			...prefix("CT1", [
+				index("routes/events/CT1/_index.tsx"),
+				route("catalog", "routes/events/CT1/catalog.tsx"),
 			])
 		])
 	])

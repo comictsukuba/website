@@ -12,7 +12,7 @@ export default function Route(): JSX.Element {
 				おかげさまで、募集予定枠を大きく上回る結果となりました。ご応募いただいた皆様、ありがとうございました！
 			</p>
 			<div className="mt-4">
-				<LargeLinkButton to="/events/001" label="第１回開催情報はこちら！" />
+				<LargeLinkButton to="/events/CT1" label="第１回開催情報はこちら！" />
 			</div>
 		</div>
 	);
