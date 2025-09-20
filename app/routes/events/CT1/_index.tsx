@@ -3,7 +3,7 @@ import { BouncyNumber } from "~/components/common/BouncyNumber";
 import { LargeLinkButton } from "~/components/common/button/LargeLinkButton";
 import { DataList } from "~/components/common/datalist/DataList";
 import { Section } from "~/components/common/Section";
-import type { Route } from "../+types/_index";
+import type { Route } from "./+types/_index";
 
 export async function loader({ params }: Route.LoaderArgs): Promise<{ dates: Date[] }> {
 	return {
