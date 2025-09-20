@@ -8,7 +8,10 @@ export function loader({ context }: Route.LoaderArgs) {
 
 export default function Route({ loaderData }: Route.ComponentProps) {
   return (
-    <div className="max-w-screen-xl mx-auto py-12 space-y-24"> {/* body全体 */}
+    <div className="max-w-screen-xl mx-auto pb-12"> {/* body全体 */}
+      <Link to={"/events/CT1"} className="block h-fit bg-brand-adjusted text-white text-center text-xl md:text-3xl font-bold py-4"> {/* 一番上のとこ */}
+        <span>{"＞＞＞ 第１回コミックつくば！ 雙峰祭にて開催決定！ ＜＜＜"}</span>
+      </Link>
       <div className="flex flex-col md:flex-row items-center gap-x-12 mt-8"> {/* メインのとこ */}
         <div className="flex md:w-[60%] w-full  justify-center items-center"> {/* 左側 */}
           <img
