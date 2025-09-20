@@ -5,9 +5,11 @@ import { DataList } from "~/components/common/datalist/DataList";
 import { Section } from "~/components/common/Section";
 import type { Route } from "./+types/_index";
 
-export async function loader({ params }: Route.LoaderArgs): Promise<{ dates: Date[] }> {
+export async function loader({ params }: Route.LoaderArgs): Promise<{ date: string, place: string, participantCount: string }> {
 	return {
-		dates: []
+		date: `第51回雙峰祭当日（${new Date("2025-11-02").toLocaleDateString("ja-JP")}, ${new Date("2025-11-03").toLocaleDateString("ja-JP")}）`,
+		place: "筑波大学内",
+		participantCount: "XX", // TODO: 仮の値。バックエンドから取得できるようになったら置き換える
 	};
 }
 
@@ -17,12 +19,12 @@ export default function Index({ loaderData }: Route.ComponentProps): JSX.Element
 			<h1 className="text-2xl font-bold text-gray-800">第１回コミックつくば！開催案内</h1>
 			<div className="w-full h-fit flex flex-col gap-6">
 				<DataList items={[
-					{ icon: "calendar", label: "日時", value: new Date().toLocaleDateString("ja-JP") },
-					{ icon: "map-pin", label: "場所", value: "筑波大学" },
+					{ icon: "calendar", label: "日時", value: loaderData.date },
+					{ icon: "map-pin", label: "場所", value: loaderData.place },
 					{
 						icon: "library-big", label: "参加サークル数", value: (
 							<span className="flex flex-row items-baseline gap-1">
-								<BouncyNumber value="XX" />
+								<BouncyNumber value={loaderData.participantCount} />
 								サークル
 							</span>
 						)
