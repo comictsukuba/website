@@ -16,15 +16,15 @@ export function DataList({ items }: { items: DataListItem[] }): JSX.Element {
 						<tr className="contents" key={index}>
 							<th className="contents">
 								<div className="col-span-1 h-full flex flex-row items-end justify-start gap-3 font-normal">
-									<DynamicIcon name={item.icon} size={18} className="text-gray-500 -translate-y-0.5" />
-									<span className="text text-gray-500">
+									<DynamicIcon name={item.icon} size={18} className="text-fg-subtle -translate-y-0.5" />
+									<span className="text text-fg-subtle">
 										{item.label}
 									</span>
 								</div>
 							</th>
 							<td className="contents">
 								<div className="col-span-1 h-full flex flex-row items-end justify-start gap-2">
-									<span className="text text-gray-700">
+									<span className="text text-fg-muted">
 										{item.value}
 									</span>
 								</div>

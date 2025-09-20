@@ -169,19 +169,19 @@ export default function Index({ loaderData }: Route.ComponentProps): JSX.Element
             </h1>
             <div className="flex flex-col gap-6">
                 <div className="w-full h-fit flex flex-col gap-2">
-                    <input className="w-full h-12 px-6 bg-gray-100 rounded-xl placeholder-gray-500"
+                    <input className="w-full h-12 px-6 bg-bg-muted rounded-xl placeholder-fg-subtle"
                         type="text"
                         placeholder="サークル名・キーワードで検索..."
                         value={filterInput}
                         onChange={(e) => setFilterInput(e.target.value)}
                     />
                     <div className="w-fit h-fit flex flex-row gap-3 items-center relative">
-                        <button className="w-fit h-fit px-2 py-1.5 border border-gray-400 rounded-full text-gray-500 flex flex-row items-center"
+                        <button className="w-fit h-fit px-2 py-1.5 border border-fg-subtle rounded-full text-fg-subtle flex flex-row items-center"
                             onClick={() => {
                                 setShowFilterMenu(!showFilterMenu);
                             }}>
 
-                            <LucidePlus className="text-gray-400" size={20} />
+                            <LucidePlus className="text-fg-subtle" size={20} />
                             {
                                 "絞り込みを追加"
                             }

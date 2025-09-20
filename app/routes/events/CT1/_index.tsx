@@ -16,7 +16,7 @@ export async function loader({ params }: Route.LoaderArgs): Promise<{ date: stri
 export default function Index({ loaderData }: Route.ComponentProps): JSX.Element {
 	return (
 		<section className="w-full max-w-[1024px] h-fit mx-auto px-4 py-6 flex flex-col gap-6">
-			<h1 className="text-2xl font-bold text-gray-800">第１回コミックつくば！開催案内</h1>
+			<h1 className="text-2xl font-bold text-fg">第１回コミックつくば！開催案内</h1>
 			<div className="w-full h-fit flex flex-col gap-6">
 				<DataList items={[
 					{ icon: "calendar", label: "日時", value: loaderData.date },
@@ -30,7 +30,7 @@ export default function Index({ loaderData }: Route.ComponentProps): JSX.Element
 						)
 					}
 				]} />
-				<div className="w-full h-[1px] bg-gray-300 border-full" />
+				<div className="w-full h-[1px] bg-fg-blink border-full" />
 				<div className="w-full h-fit py-8 flex items-center justify-center">
 					<LargeLinkButton to={"./catalog"} label="出展一覧はこちら" />
 				</div>

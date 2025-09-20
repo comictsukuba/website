@@ -6,11 +6,29 @@
 		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 	/* Color Variables */
-	--color-brand-main: #62B7BB;
-	--color-brand-sub1: #97CFF1;
-	--color-brand-sub2: #D6E7CD;
-	--color-brand-sub3: #A1B2B3;
-	--color-brand-adjusted: #469FA3;
+	--color-brand-main: #62b7bb;
+	--color-brand-sub1: #97cff1;
+	--color-brand-sub2: #d6e7cd;
+	--color-brand-sub3: #a1b2b3;
+	--color-brand-adjusted: #469fa3;
+
+	--color-fg: oklch(13% 0.028 261.692); /* gray-950 */
+	--color-fg-muted: oklch(37.3% 0.034 259.733); /* gray-700 */
+	--color-fg-subtle: oklch(55.1% 0.027 264.364); /* gray-500 */
+	--color-fg-blink: oklch(87.2% 0.01 258.338); /* gray-300 */
+	--color-bg: oklch(98.5% 0.002 247.839); /* gray-50 */
+	--color-bg-muted: oklch(96.7% 0.003 264.542); /* gray-100 */
+}
+
+:root {
+	@media (prefers-color-scheme: dark) {
+		--color-fg: oklch(98.5% 0.002 247.839); /* gray-50 */
+		--color-fg-muted: oklch(87.2% 0.01 258.338); /* gray-300 */
+		--color-fg-subtle: oklch(70.7% 0.022 261.325); /* gray-400 */
+		--color-fg-blink: oklch(44.6% 0.03 256.802); /* gray-600 */
+		--color-bg: oklch(13% 0.028 261.692); /* gray-950 */
+		--color-bg-muted: oklch(27.8% 0.033 256.848); /* gray-800 */
+	}
 }
 
 html,

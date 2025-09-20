@@ -27,14 +27,14 @@ export function BoothInfoCard({ data, alwaysExpanded = false }: { data: BoothVie
 	const [isExpanded, setIsExpanded] = useState(alwaysExpanded);
 
 	return (
-		<div className="w-full p-4 border-[length:1px] border-[#D1D1D1] grid grid-cols-[auto_1fr_auto] gap-x-4 rounded-lg">
+		<div className="w-full p-4 border-[length:1px] border-fg-blink grid grid-cols-[auto_1fr_auto] gap-x-4 rounded-lg">
 			{/* icon */}
-			<div className="w-14 h-14 bg-gray-300 rounded-lg"></div>
+			<div className="w-14 h-14 bg-fg-blink rounded-lg"></div>
 			<div className="flex flex-col h-fit gap-3 transition-all duration-300">
 				<div className="flex min-h-14 flex-col justify-between w-fit">
 					<div className="flex flex-row gap-1 items-center">
-						<div className="w-6 h-6 min-w-6 flex items-center bg-[#00C1D4] rounded-full justify-center">
-							<span className="text-[0.9375rem] text-white font-bold">
+						<div className="w-6 h-6 min-w-6 flex items-center bg-brand-adjusted dark:bg-brand rounded-full justify-center">
+							<span className="text-[0.9375rem] text-bg font-bold">
 								{data.space ?? "委"}
 							</span>
 						</div>
@@ -66,7 +66,7 @@ export function BoothInfoCard({ data, alwaysExpanded = false }: { data: BoothVie
 				)
 			}
 			<AnimatePresence>
-				{(isExpanded || alwaysExpanded) && <motion.div className={`text-sm text-gray-600 overflow-hidden col-span-3`}
+				{(isExpanded || alwaysExpanded) && <motion.div className={`text-sm text-fg-muted overflow-hidden col-span-3`}
 					initial={{ opacity: 0, height: 0, paddingTop: 0, y: "0.75rem" }}
 					animate={{
 						opacity: 1, height: "auto", paddingTop: "0.75rem", y: "0rem"
@@ -85,7 +85,7 @@ export function BoothInfoCard({ data, alwaysExpanded = false }: { data: BoothVie
 function DetailsBlock({ data }: { data: BoothViewModel }): JSX.Element {
 	return (
 		<div className="w-full h-fit flex flex-col gap-1">
-			<div className="text-sm text-gray-600">
+			<div className="text-sm text-fg-muted">
 				{data.description}
 			</div>
 			{
