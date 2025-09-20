@@ -1,4 +1,4 @@
-import { MailIcon, TwitterIcon } from "lucide-react";
+import { InstagramIcon, MailIcon, TwitterIcon } from "lucide-react";
 import type { JSX } from "react";
 import { Link } from "react-router";
 
@@ -18,6 +18,10 @@ export function Footer(): JSX.Element {
                         <li className="contents">
                             <TwitterIcon size={20} />
                             <Link to="https://x.com/comictsukuba">@comictsukuba</Link>
+                        </li>
+                        <li className="contents">
+                            <InstagramIcon size={20} />
+                            <Link to="https://www.instagram.com/comictsukuba">comictsukuba</Link>
                         </li>
                     </ul>
                 </div>

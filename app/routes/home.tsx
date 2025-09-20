@@ -44,7 +44,7 @@ export default function Route({ loaderData }: Route.ComponentProps) {
 
           <div className="mt-20 flex space-x-10 ">
             <div className="transition-transform duration-200 ease-out hover:scale-110"><LinkButton platform="twitter" url="https://x.com/comictsukuba" size={64} /></div>
-            <div className="transition-transform duration-200 ease-out hover:scale-110"><LinkButton platform="instagram" url="https://instagram.com" size={64} /></div>
+            <div className="transition-transform duration-200 ease-out hover:scale-110"><LinkButton platform="instagram" url="https://www.instagram.com/comictsukuba" size={64} /></div>
           </div>
         </div>
 

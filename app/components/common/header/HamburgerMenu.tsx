@@ -1,4 +1,4 @@
-import { Menu, XIcon } from "lucide-react";
+import { InstagramIcon, Menu, TwitterIcon, XIcon } from "lucide-react";
 import { motion } from "motion/react";
 import { useState, type JSX } from "react";
 import { NavLink } from "react-router";
@@ -56,6 +56,20 @@ export function HamburgerMenu(): JSX.Element {
 						</li>
 					</ul>
 				</nav>
+				<div className="w-11/12 h-[1px] bg-fg-blink self-center mb-4" />
+				<ul className="w-full flex flex-row gap-8 justify-center">
+					<li>
+						<a href="https://x.com/comictsukuba" target="_blank" rel="noopener noreferrer" className="text-fg">
+							<TwitterIcon size={24} />
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/comictsukuba" target="_blank" rel="noopener noreferrer" className="text-fg">
+							<InstagramIcon size={24} />
+						</a>
+					</li>
+
+				</ul>
 			</motion.div>
 		</>
 	);
