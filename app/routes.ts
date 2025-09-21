@@ -10,8 +10,8 @@ export default [
 		...prefix("news", [
 			index("routes/news/_index.tsx"),
 			route("1", "routes/news/1.tsx"),
-			route("2", "routes/news/2.tsx"),
 			route("3", "routes/news/3.tsx"),
+			route("4", "routes/news/4.tsx"),
 		]),
 		...prefix("events", [
 			...prefix("CT1", [
