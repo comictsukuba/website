@@ -4,6 +4,7 @@ import { LargeLinkButton } from "~/components/common/button/LargeLinkButton";
 import { DataList } from "~/components/common/datalist/DataList";
 import { Section } from "~/components/common/Section";
 import type { Route } from "./+types/_index";
+import { CalendarIcon, LibraryBigIcon, MapPinIcon } from "lucide-react";
 
 export async function loader({ params }: Route.LoaderArgs): Promise<{ date: string, place: string, participantCount: string }> {
 	return {
@@ -19,10 +20,10 @@ export default function Index({ loaderData }: Route.ComponentProps): JSX.Element
 			<h1 className="text-2xl font-bold text-fg">第１回コミックつくば！開催案内</h1>
 			<div className="w-full h-fit flex flex-col gap-6">
 				<DataList items={[
-					{ icon: "calendar", label: "日時", value: loaderData.date },
-					{ icon: "map-pin", label: "場所", value: loaderData.place },
+					{ icon: <CalendarIcon size={18}  />, label: "日時", value: loaderData.date },
+					{ icon: <MapPinIcon size={18} />, label: "場所", value: loaderData.place },
 					{
-						icon: "library-big", label: "出展者／団体数", value: (
+						icon: <LibraryBigIcon size={18} />, label: "出展者／団体数", value: (
 							<span className="flex flex-row items-baseline gap-1">
 								<BouncyNumber value={loaderData.participantCount} />
 								人／団体

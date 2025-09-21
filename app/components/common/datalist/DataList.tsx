@@ -1,8 +1,7 @@
-import { DynamicIcon, type IconName } from "lucide-react/dynamic";
 import type { JSX } from "react";
 
 export type DataListItem = {
-	icon: IconName;
+	icon: JSX.Element;
 	label: string | JSX.Element;
 	value: string | JSX.Element;
 };
@@ -16,7 +15,9 @@ export function DataList({ items }: { items: DataListItem[] }): JSX.Element {
 						<tr className="contents" key={index}>
 							<th className="contents">
 								<div className="col-span-1 h-full flex flex-row items-end justify-start gap-3 font-normal">
-									<DynamicIcon name={item.icon} size={18} className="text-fg-subtle -translate-y-0.5" />
+									<div className="text-fg-subtle -translate-y-0.5">
+										{item.icon}
+									</div>
 									<span className="text text-fg-subtle">
 										{item.label}
 									</span>
