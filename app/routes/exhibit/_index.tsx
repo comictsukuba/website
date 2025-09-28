@@ -4,6 +4,12 @@ import { LargeLinkButton } from "~/components/common/button/LargeLinkButton";
 export default function Route(): JSX.Element {
 	return (
 		<div className="container mx-auto py-8 text-center">
+
+			{/* メタデータ -----✧ */}
+			<title>出展参加申し込み ✧ コミックつくば！</title>
+			<meta name="description" content="コミックつくば！公式サイトです。"></meta>
+			{/* ✧-------------- */}
+
 			<h1 className="text-3xl font-bold">
 				出展参加申し込み
 			</h1>

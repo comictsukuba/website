@@ -162,6 +162,12 @@ export default function Index({ loaderData }: Route.ComponentProps): JSX.Element
 
     return (
         <div className="w-[1024px] max-w-full flex flex-col gap-6 px-4 py-6 mx-auto">
+
+            {/* メタデータ -----✧ */}
+            <title>出展一覧 ✧ コミックつくば！</title>
+            <meta name="description" content="コミックつくば！公式サイトです。"></meta>
+            {/* ✧-------------- */}
+
             <h1 className="text-2xl font-bold">
                 {
                     "出展一覧"

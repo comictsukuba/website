@@ -9,6 +9,12 @@ export function loader({ context }: Route.LoaderArgs) {
 export default function Route({ loaderData }: Route.ComponentProps) {
   return (
     <div className="max-w-screen-xl mx-auto pb-12"> {/* body全体 */}
+
+      {/* メタデータ -----✧ */}
+      <title>ホーム ✧ コミックつくば！</title>
+      <meta name="description" content="コミックつくば！公式サイトです。"></meta>
+      {/* ✧-------------- */}
+
       <Link to={"/events/CT1"} className="block h-fit bg-brand-adjusted text-white text-center text-xl md:text-3xl font-bold py-4"> {/* 一番上のとこ */}
         <span>{"＞＞＞ 第１回コミックつくば！ 雙峰祭にて開催決定！ ＜＜＜"}</span>
       </Link>

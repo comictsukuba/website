@@ -3,6 +3,12 @@ import type { JSX } from "react";
 export default function Route(): JSX.Element {
 	return (
 		<div className="container mx-auto py-8 space-y-16 max-w-md">
+
+			{/* メタデータ -----✧ */}
+			<title>コミックつくば！とは？ ✧ コミックつくば！</title>
+			<meta name="description" content="コミックつくば！公式サイトです。"></meta>
+			{/* ✧-------------- */}
+
 			<div className="space-y-8 font-bold">
 				<h2 className="text-2xl text-center">コミックつくば！とは？</h2>
 				<div>

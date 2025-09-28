@@ -1,10 +1,10 @@
+import { CalendarIcon, LibraryBigIcon, MapPinIcon } from "lucide-react";
 import type { JSX } from "react";
 import { BouncyNumber } from "~/components/common/BouncyNumber";
 import { LargeLinkButton } from "~/components/common/button/LargeLinkButton";
 import { DataList } from "~/components/common/datalist/DataList";
 import { Section } from "~/components/common/Section";
 import type { Route } from "./+types/_index";
-import { CalendarIcon, LibraryBigIcon, MapPinIcon } from "lucide-react";
 
 export async function loader({ params }: Route.LoaderArgs): Promise<{ date: string, place: string, participantCount: string }> {
 	return {
@@ -17,10 +17,16 @@ export async function loader({ params }: Route.LoaderArgs): Promise<{ date: stri
 export default function Index({ loaderData }: Route.ComponentProps): JSX.Element {
 	return (
 		<section className="w-full max-w-[1024px] h-fit mx-auto px-4 py-6 flex flex-col gap-6">
+
+			{/* メタデータ -----✧ */}
+			<title>第１回コミックつくば！開催案内 ✧ コミックつくば！</title>
+			<meta name="description" content="コミックつくば！公式サイトです。"></meta>
+			{/* ✧-------------- */}
+
 			<h1 className="text-2xl font-bold text-fg">第１回コミックつくば！開催案内</h1>
 			<div className="w-full h-fit flex flex-col gap-6">
 				<DataList items={[
-					{ icon: <CalendarIcon size={18}  />, label: "日時", value: loaderData.date },
+					{ icon: <CalendarIcon size={18} />, label: "日時", value: loaderData.date },
 					{ icon: <MapPinIcon size={18} />, label: "場所", value: loaderData.place },
 					{
 						icon: <LibraryBigIcon size={18} />, label: "出展者／団体数", value: (
