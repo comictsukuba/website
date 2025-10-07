@@ -8,7 +8,7 @@ export type DataListItem = {
 
 export function DataList({ items }: { items: DataListItem[] }): JSX.Element {
 	return (
-		<div className="w-full px-4 grid grid-cols-[max-content_max-content] auto-rows-[32px] gap-x-16 gap-y-1">
+		<div className="w-full px-4 grid grid-cols-[max-content_minmax(auto,max-content)] auto-rows-[minmax(32px,auto)] gap-x-16 gap-y-1">
 			<table className="contents">
 				<tbody className="contents">
 					{items.map((item, index) => (
@@ -25,7 +25,7 @@ export function DataList({ items }: { items: DataListItem[] }): JSX.Element {
 							</th>
 							<td className="contents">
 								<div className="col-span-1 h-full flex flex-row items-end justify-start gap-2">
-									<span className="text text-fg-muted">
+									<span className="text text-fg-muted whitespace-pre-line">
 										{item.value}
 									</span>
 								</div>
