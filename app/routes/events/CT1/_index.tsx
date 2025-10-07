@@ -16,39 +16,44 @@ export async function loader({ params }: Route.LoaderArgs): Promise<{ date: stri
 
 export default function Index({ loaderData }: Route.ComponentProps): JSX.Element {
 	return (
-		<section className="w-full max-w-[1024px] h-fit mx-auto px-4 py-6 flex flex-col gap-6">
-
-			{/* メタデータ -----✧ */}
-			<title>第１回コミックつくば！開催案内 ✧ コミックつくば！</title>
-			<meta name="description" content="コミックつくば！公式サイトです。"></meta>
-			{/* ✧-------------- */}
-
-			<h1 className="text-2xl font-bold text-fg">第１回コミックつくば！開催案内</h1>
-			<div className="w-full h-fit flex flex-col gap-6">
-				<DataList items={[
-					{ icon: <CalendarIcon size={18} />, label: "日時", value: loaderData.date },
-					{ icon: <MapPinIcon size={18} />, label: "場所", value: loaderData.place },
-					{
-						icon: <LibraryBigIcon size={18} />, label: "出展者／団体数", value: (
-							<span className="flex flex-row items-baseline gap-1">
-								<BouncyNumber value={loaderData.participantCount} />
-								人／団体
-							</span>
-						)
-					}
-				]} />
-				<div className="w-full h-[1px] bg-fg-blink border-full" />
-				<div className="w-full h-fit py-8 flex items-center justify-center">
-					<LargeLinkButton to={"./catalog"} label="出展一覧はこちら" />
-				</div>
-				<Section heading="フロアマップ">
-					<div className="w-full aspect-video bg-gray-200" />
-				</Section>
-				<Section heading="注意事項">
-					<ul className="list-disc list-inside flex flex-col gap-1 pl-2">
-					</ul>
-				</Section>
+		<>
+			<div className="relative bg-[url('/pictures/banner_CT1.png')] bg-cover bg-top w-full max-h-[360px] aspect-[16/9] mx-auto flex items-end justify-end px-4 pb-3">
+				<h1 className="z-10 text-2xl font-bold text-bg">第１回コミックつくば！開催案内</h1>
+				<div className="z-0 absolute h-1/2 bottom-0 left-0 right-0 bg-gradient-to-t from-[rgba(0,0,0,0.8)] to-transparent mix-blend-overlay"></div>
 			</div>
-		</section>
+			<section className="w-full max-w-[1024px] h-fit mx-auto px-4 py-6 flex flex-col gap-6">
+
+				{/* メタデータ -----✧ */}
+				<title>第１回コミックつくば！開催案内 ✧ コミックつくば！</title>
+				<meta name="description" content="コミックつくば！公式サイトです。"></meta>
+				{/* ✧-------------- */}
+
+				<div className="w-full h-fit flex flex-col gap-6">
+					<DataList items={[
+						{ icon: <CalendarIcon size={18} />, label: "日時", value: loaderData.date },
+						{ icon: <MapPinIcon size={18} />, label: "場所", value: loaderData.place },
+						{
+							icon: <LibraryBigIcon size={18} />, label: "出展者／団体数", value: (
+								<span className="flex flex-row items-baseline gap-1">
+									<BouncyNumber value={loaderData.participantCount} />
+									人／団体
+								</span>
+							)
+						}
+					]} />
+					<div className="w-full h-[1px] bg-fg-blink border-full" />
+					<div className="w-full h-fit py-8 flex items-center justify-center">
+						<LargeLinkButton to={"./catalog"} label="出展一覧はこちら" />
+					</div>
+					<Section heading="フロアマップ">
+						<div className="w-full aspect-video bg-gray-200" />
+					</Section>
+					<Section heading="注意事項">
+						<ul className="list-disc list-inside flex flex-col gap-1 pl-2">
+						</ul>
+					</Section>
+				</div>
+			</section>
+		</>
 	);
 }
