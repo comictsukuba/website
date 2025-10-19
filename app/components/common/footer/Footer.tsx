@@ -56,7 +56,7 @@ function NavGroup({ title, links }: { title: string, links: { label: string, hre
             <ul className="flex flex-col gap-0">
                 {links.map(link => (
                     <li key={link.label}>
-                        <Link className="hover:underline" to={link.href}>{link.label}</Link>
+                        <Link viewTransition className="hover:underline" to={link.href}>{link.label}</Link>
                     </li>
                 ))}
             </ul>

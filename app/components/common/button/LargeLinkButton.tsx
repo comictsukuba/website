@@ -4,7 +4,7 @@ import { Link, type To } from "react-router";
 
 const MotionLink = motion(
 	forwardRef<HTMLAnchorElement, React.ComponentProps<typeof Link>>((props, ref) => (
-		<Link ref={ref} {...props} />
+		<Link viewTransition ref={ref} {...props} />
 	))
 );
 
