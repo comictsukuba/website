@@ -1,6 +1,6 @@
 import { LucidePlus } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
-import { useState, type JSX } from "react";
+import { useEffect, useRef, useState, type JSX } from "react";
 import type { BoothViewModel } from "~/components/catalog/BoothInfoCard";
 import { BoothInfoCard, type BoothTagViewModel } from "~/components/catalog/BoothInfoCard";
 import { Badge } from "~/components/common/badge/Badge";
@@ -160,6 +160,22 @@ export default function Index({ loaderData }: Route.ComponentProps): JSX.Element
         return data.name.toLowerCase().includes(lowerInput) || data.description.toLowerCase().includes(lowerInput);
     });
 
+    // ref for the filter menu container so we can detect outside clicks
+    const menuContainerRef = useRef<HTMLDivElement | null>(null);
+
+    // close the filter menu when clicking outside
+    useEffect(() => {
+        if (!showFilterMenu) return;
+        function handleDocumentClick(e: MouseEvent) {
+            const target = e.target as Node | null;
+            if (menuContainerRef.current && target && !menuContainerRef.current.contains(target)) {
+                setShowFilterMenu(false);
+            }
+        }
+        document.addEventListener("pointerdown", handleDocumentClick);
+        return () => document.removeEventListener("pointerdown", handleDocumentClick);
+    }, [showFilterMenu]);
+
     return (
         <div className="w-[1024px] max-w-full flex flex-col gap-6 px-4 py-6 mx-auto">
 
@@ -181,7 +197,7 @@ export default function Index({ loaderData }: Route.ComponentProps): JSX.Element
                         value={filterInput}
                         onChange={(e) => setFilterInput(e.target.value)}
                     />
-                    <div className="w-fit h-fit flex flex-row gap-3 items-center relative">
+                    <div ref={menuContainerRef} className="w-fit h-fit flex flex-row gap-3 items-center relative">
                         <button className="w-fit h-fit px-2 py-1.5 border border-fg-subtle rounded-full text-fg-subtle flex flex-row items-center"
                             onClick={() => {
                                 setShowFilterMenu(!showFilterMenu);
