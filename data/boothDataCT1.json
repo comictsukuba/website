@@ -1,0 +1,316 @@
+{
+	"booths": [
+		{
+			"id": "CT001001",
+			"name": "きらきら星ソーダ",
+			"participant": {
+				"day1": { "type": "booth", "spaceId": 24 },
+				"day2": { "type": "none" }
+			}
+		},
+		{
+			"id": "CT001002",
+			"name": "青菜に塩　出張店",
+			"participant": {
+				"day1": { "type": "consignment" },
+				"day2": { "type": "consignment" }
+			}
+		},
+		{
+			"id": "CT001003",
+			"name": "現視研コスプレ班",
+			"participant": {
+				"day1": { "type": "booth", "spaceId": 20 },
+				"day2": { "type": "booth", "spaceId": 20 }
+			}
+		},
+		{
+			"id": "CT001004",
+			"name": "現代視覚文化研究会小説班",
+			"participant": {
+				"day1": { "type": "booth", "spaceId": 4 },
+				"day2": { "type": "booth", "spaceId": 4 }
+			}
+		},
+		{
+			"id": "CT001005",
+			"name": "カニさん大好きクラブ",
+			"participant": {
+				"day1": { "type": "booth", "spaceId": 5 },
+				"day2": { "type": "booth", "spaceId": 5 }
+			}
+		},
+		{
+			"id": "CT001006",
+			"name": "現代視覚文化研究会アーカイブ班",
+			"participant": {
+				"day1": { "type": "booth", "spaceId": 3 },
+				"day2": { "type": "booth", "spaceId": 3 }
+			}
+		},
+		{
+			"id": "CT001007",
+			"name": "現代視覚文化研究会　イラスト・漫画班",
+			"participant": {
+				"day1": { "type": "booth", "spaceId": 21 },
+				"day2": { "type": "none" }
+			}
+		},
+		{
+			"id": "CT001008",
+			"name": "MXO制作委員会",
+			"participant": {
+				"day1": { "type": "booth", "spaceId": 13 },
+				"day2": { "type": "booth", "spaceId": 13 }
+			}
+		},
+		{
+			"id": "CT001009",
+			"name": "地方学園都市ツクテリア",
+			"participant": {
+				"day1": { "type": "booth", "spaceId": 18 },
+				"day2": { "type": "booth", "spaceId": 18 }
+			}
+		},
+		{
+			"id": "CT001010",
+			"name": "Philia/げんしけん美少女ゲーム制作班",
+			"participant": {
+				"day1": { "type": "booth", "spaceId": 2 },
+				"day2": { "type": "booth", "spaceId": 2 }
+			}
+		},
+		{
+			"id": "CT001011",
+			"name": "Caffe mocha",
+			"participant": {
+				"day1": { "type": "booth", "spaceId": 16 },
+				"day2": { "type": "booth", "spaceId": 16 }
+			}
+		},
+		{
+			"id": "CT001012",
+			"name": "para/philia",
+			"participant": {
+				"day1": { "type": "booth", "spaceId": 1 },
+				"day2": { "type": "booth", "spaceId": 1 }
+			}
+		},
+		{
+			"id": "CT001013",
+			"name": "鮎川邸",
+			"participant": {
+				"day1": { "type": "booth", "spaceId": 6 },
+				"day2": { "type": "booth", "spaceId": 6 }
+			}
+		},
+		{
+			"id": "CT001014",
+			"name": "きりのはのべる",
+			"participant": {
+				"day1": { "type": "booth", "spaceId": 9 },
+				"day2": { "type": "booth", "spaceId": 9 }
+			}
+		},
+		{
+			"id": "CT001015",
+			"name": "菊莉涼音文芸会",
+			"participant": {
+				"day1": { "type": "consignment" },
+				"day2": { "type": "consignment" }
+			}
+		},
+		{
+			"id": "CT001016",
+			"name": "ひつじのいえ",
+			"participant": {
+				"day1": { "type": "booth", "spaceId": 25 },
+				"day2": { "type": "none" }
+			}
+		},
+		{
+			"id": "CT001017",
+			"name": "『桐の若葉 ―筑波大学学類生論考集―』",
+			"participant": {
+				"day1": { "type": "booth", "spaceId": 14 },
+				"day2": { "type": "booth", "spaceId": 14 }
+			}
+		},
+		{
+			"id": "CT001018",
+			"name": "俳句結社『桐一葉』",
+			"participant": {
+				"day1": { "type": "booth", "spaceId": 7 },
+				"day2": { "type": "booth", "spaceId": 7 }
+			}
+		},
+		{
+			"id": "CT001019",
+			"name": "驚額の殿堂",
+			"participant": {
+				"day1": { "type": "consignment" },
+				"day2": { "type": "consignment" }
+			}
+		},
+		{
+			"id": "CT001020",
+			"name": "SF研究会アルビレオ",
+			"participant": {
+				"day1": { "type": "booth", "spaceId": 15 },
+				"day2": { "type": "booth", "spaceId": 15 }
+			}
+		},
+		{
+			"id": "CT001021",
+			"name": "ながいいぬ",
+			"participant": {
+				"day1": { "type": "booth", "spaceId": 27 },
+				"day2": { "type": "consignment" }
+			}
+		},
+		{
+			"id": "CT001022",
+			"name": "DAB0R",
+			"participant": {
+				"day1": { "type": "consignment" },
+				"day2": { "type": "consignment" }
+			}
+		},
+		{
+			"id": "CT001023",
+			"name": "slobia",
+			"participant": {
+				"day1": { "type": "consignment" },
+				"day2": { "type": "consignment" }
+			}
+		},
+		{
+			"id": "CT001024",
+			"name": "牢屋のおやつ",
+			"participant": {
+				"day1": { "type": "booth", "spaceId": 26 },
+				"day2": { "type": "consignment" }
+			}
+		},
+		{
+			"id": "CT001025",
+			"name": "魔術専門学群",
+			"participant": {
+				"day1": { "type": "consignment" },
+				"day2": { "type": "consignment" }
+			}
+		},
+		{
+			"id": "CT001026",
+			"name": "Astroth",
+			"participant": {
+				"day1": { "type": "consignment" },
+				"day2": { "type": "consignment" }
+			}
+		},
+		{
+			"id": "CT001027",
+			"name": "つくば現代短歌会",
+			"participant": {
+				"day1": { "type": "consignment" },
+				"day2": { "type": "consignment" }
+			}
+		},
+		{
+			"id": "CT001028",
+			"name": "Openfab創房",
+			"participant": {
+				"day1": { "type": "booth", "spaceId": 11 },
+				"day2": { "type": "booth", "spaceId": 11 }
+			}
+		},
+		{
+			"id": "CT001029",
+			"name": "グルメタワー273階",
+			"participant": {
+				"day1": { "type": "booth", "spaceId": 23 },
+				"day2": { "type": "consignment" }
+			}
+		},
+		{
+			"id": "CT001030",
+			"name": "全国的に晴れやか",
+			"participant": {
+				"day1": { "type": "booth", "spaceId": 28 },
+				"day2": { "type": "consignment" }
+			}
+		},
+		{
+			"id": "CT001031",
+			"name": "つくばナード出版会",
+			"participant": {
+				"day1": { "type": "booth", "spaceId": 8 },
+				"day2": { "type": "booth", "spaceId": 8 }
+			}
+		},
+		{
+			"id": "CT001032",
+			"name": "工学系団体合同",
+			"participant": {
+				"day1": { "type": "booth", "spaceId": 10 },
+				"day2": { "type": "booth", "spaceId": 10 }
+			}
+		},
+		{
+			"id": "CT001033",
+			"name": "天晴ぱれっと",
+			"participant": {
+				"day1": { "type": "booth", "spaceId": 22 },
+				"day2": { "type": "consignment" }
+			}
+		},
+		{
+			"id": "CT001034",
+			"name": "WORD編集部",
+			"participant": {
+				"day1": { "type": "booth", "spaceId": 12 },
+				"day2": { "type": "booth", "spaceId": 12 }
+			}
+		},
+		{
+			"id": "CT001035",
+			"name": "知識情報・図書館学類誌milk",
+			"participant": {
+				"day1": { "type": "consignment" },
+				"day2": { "type": "consignment" }
+			}
+		},
+		{
+			"id": "CT001036",
+			"name": "筑波きらら同好会",
+			"participant": {
+				"day1": { "type": "booth", "spaceId": 17 },
+				"day2": { "type": "booth", "spaceId": 17 }
+			}
+		},
+		{
+			"id": "CT001037",
+			"name": "前現代",
+			"participant": {
+				"day1": { "type": "consignment" },
+				"day2": { "type": "consignment" }
+			}
+		},
+		{
+			"id": "CT001038",
+			"name": "雑誌『むらくも』編集委員会",
+			"participant": {
+				"day1": { "type": "consignment" },
+				"day2": { "type": "consignment" }
+			}
+		},
+		{
+			"id": "CT001039",
+			"name": "yukidokemizu",
+			"participant": {
+				"day1": { "type": "booth", "spaceId": 19 },
+				"day2": { "type": "booth", "spaceId": 19 }
+			}
+		}
+	]
+}
