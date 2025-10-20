@@ -77,7 +77,7 @@ export function HamburgerMenu(): JSX.Element {
 
 function NavLinkItem({ to, isNew = false, children, handleClose }: { to: string; isNew?: boolean; children: React.ReactNode; handleClose: () => void }): JSX.Element {
 	return (
-		<NavLink to={to} className={`w-full h-full flex items-center justify-center relative px-4 py-4
+		<NavLink to={to} viewTransition className={`w-full h-full flex items-center justify-center relative px-4 py-4
 			${isNew && "after:content-['NEW'] after:absolute after:left-2 after:bg-red-500 after:text-white after:text-xs after:px-1.5 after:py-0.5 after:rounded-sm after:font-bold after:border-bg after:border-2"}`} onClick={handleClose}>
 			{
 				({ isActive }) => (

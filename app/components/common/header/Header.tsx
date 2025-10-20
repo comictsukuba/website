@@ -48,7 +48,7 @@ export function Header(): JSX.Element {
 
 function NavLinkItem({ to, isNew = false, children }: { to: string; isNew?: boolean; children: React.ReactNode }): JSX.Element {
 	return (
-		<NavLink to={to} className={`w-full h-full flex items-center justify-center relative px-4
+		<NavLink to={to} viewTransition className={`w-full h-full flex items-center justify-center relative px-4
 			${isNew && "after:content-['NEW'] after:absolute after:top-0 after:-right-1 after:bg-red-500 after:text-white after:text-xs after:px-1.5 after:py-0.5 after:rounded-sm after:font-bold after:border-bg after:border-2"}`}>
 			{
 				({ isActive }) => (

@@ -67,12 +67,10 @@ export function BoothInfoCard({ data, alwaysExpanded = false }: { data: BoothVie
 			}
 			<AnimatePresence>
 				{(isExpanded || alwaysExpanded) && <motion.div className={`text-sm text-fg-muted overflow-hidden col-span-3`}
-					initial={{ opacity: 0, height: 0, paddingTop: 0, y: "0.75rem" }}
-					animate={{
-						opacity: 1, height: "auto", paddingTop: "0.75rem", y: "0rem"
-					}}
-					exit={{ opacity: 0, height: 0, paddingTop: 0, y: "0.75rem" }}
-					transition={{ duration: 0.15 }}
+					initial={{ opacity: 0, height: 0 }}
+					animate={{ opacity: 1, height: "auto" }}
+					exit={{ opacity: 0, height: 0 }}
+					transition={{ duration: 0.15, ease: "easeOut" }}
 					key={data.id}>
 					<DetailsBlock data={data} />
 				</motion.div>
@@ -84,7 +82,7 @@ export function BoothInfoCard({ data, alwaysExpanded = false }: { data: BoothVie
 
 function DetailsBlock({ data }: { data: BoothViewModel }): JSX.Element {
 	return (
-		<div className="w-full h-fit flex flex-col gap-1">
+		<div className="w-full h-fit flex flex-col gap-1 mt-3">
 			<div className="text-sm text-fg-muted">
 				{data.description}
 			</div>
