@@ -9,11 +9,17 @@ export type BoothViewModel = {
 	name: string;
 	description: string;
 	tags: BoothTagViewModel[];
-	links: {
-		x_id?: string;
-		instagram_id?: string;
-		website?: URL;
-	}
+	links?: ({
+		type: "x";
+		id: string;
+	} | {
+		type: "instagram";
+		id: string;
+	} | {
+		type: "url";
+		url: URL;
+	})[];
+	cardUrl: string;
 }
 
 export type BoothTagViewModel = {
@@ -27,11 +33,15 @@ export function BoothInfoCard({ data, alwaysExpanded = false }: { data: BoothVie
 	const [isExpanded, setIsExpanded] = useState(alwaysExpanded);
 
 	return (
-		<div className="w-full p-4 border-[length:1px] border-fg-blink grid grid-cols-[auto_1fr_auto] gap-x-4 rounded-lg">
+		<div className="w-full h-full p-4 border-[length:1px] border-fg-blink grid grid-cols-[auto_1fr_auto] gap-x-4 grid-rows-[auto_1fr] rounded-lg">
 			{/* icon */}
-			<div className="w-14 h-14 bg-fg-blink rounded-lg"></div>
+			<div className="w-14 h-14 bg-fg-blink rounded-lg overflow-hidden">
+				{
+					data.cardUrl && <img src={data.cardUrl} alt={`${data.name} カード画像`} className="w-full h-full object-cover object-bottom [image-rendering:-webkit-optimize-contrast]" />
+				}
+			</div>
 			<div className="flex flex-col h-fit gap-3 transition-all duration-300">
-				<div className="flex min-h-14 flex-col justify-between w-fit">
+				<div className="flex min-h-14 flex-col justify-between w-fit gap-1">
 					<div className="flex flex-row gap-1 items-center">
 						<div className="w-6 h-6 min-w-6 flex items-center bg-brand-adjusted dark:bg-brand rounded-full justify-center">
 							<span className="text-[0.9375rem] text-bg font-bold">
@@ -87,33 +97,36 @@ function DetailsBlock({ data }: { data: BoothViewModel }): JSX.Element {
 				{data.description}
 			</div>
 			{
-				(data.links.x_id || data.links.instagram_id || data.links.website)
-				&& <div className="w-full h-fit flex flex-row gap-2">
-					{
-						data.links.x_id && (
-							<a href={`https://x.com/${data.links.x_id}`} target="_blank" rel="noopener noreferrer"
-								className="text-sm text-blue-500 underline">
-								{`X: @${data.links.x_id}`}
-							</a>
-						)
-					}
-					{
-						data.links.instagram_id && (
-							<a href={`https://www.instagram.com/${data.links.instagram_id}`} target="_blank" rel="noopener noreferrer"
-								className="text-sm text-blue-500 underline">
-								{`Instagram: @${data.links.instagram_id}`}
-							</a>
-						)
-					}
-					{
-						data.links.website && (
-							<a href={data.links.website.toString()} target="_blank" rel="noopener noreferrer"
-								className="text-sm text-blue-500 underline">
-								Website
-							</a>
-						)
-					}
-				</div>
+				(data.links && data.links.length > 0) && (
+					<div className="w-full h-fit flex flex-row gap-2 flex-wrap">
+						{
+							data.links.map(link => {
+								if (link.type === "x") {
+									return (
+										<a href={`https://x.com/${link.id}`} target="_blank" rel="noopener noreferrer"
+											className="text-sm text-blue-500 underline">
+											{`X: @${link.id}`}
+										</a>
+									);
+								} else if (link.type === "instagram") {
+									return (
+										<a href={`https://www.instagram.com/${link.id}`} target="_blank" rel="noopener noreferrer"
+											className="text-sm text-pink-500 underline">
+											{`Instagram: @${link.id}`}
+										</a>
+									);
+								} else if (link.type === "url") {
+									return (
+										<a href={link.url.toString()} target="_blank" rel="noopener noreferrer"
+											className="text-sm text-green-500 underline">
+											{"Website"}
+										</a>
+									);
+								}
+							})
+						}
+					</div>
+				)
 			}
 		</div>
 	);
