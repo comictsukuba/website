@@ -1,5 +1,6 @@
 import { CalendarIcon, LibraryBigIcon, MapPinIcon } from "lucide-react";
 import type { JSX } from "react";
+import floorMapImg from "~/assets/CT1/floor_map.jpg";
 import { BouncyNumber } from "~/components/common/BouncyNumber";
 import { LargeLinkButton } from "~/components/common/button/LargeLinkButton";
 import { DataList } from "~/components/common/datalist/DataList";
@@ -10,7 +11,7 @@ export async function loader({ params }: Route.LoaderArgs): Promise<{ date: stri
 	return {
 		date: `第51回雙峰祭当日（${new Date("2025-11-02").toLocaleDateString("ja-JP")}, ${new Date("2025-11-03").toLocaleDateString("ja-JP")}）`,
 		place: "筑波大学内",
-		participantCount: "XX", // TODO: 仮の値。バックエンドから取得できるようになったら置き換える
+		participantCount: "38", // TODO: 仮の値。バックエンドから取得できるようになったら置き換える
 	};
 }
 
@@ -46,7 +47,7 @@ export default function Index({ loaderData }: Route.ComponentProps): JSX.Element
 						<LargeLinkButton to={"./catalog"} label="出展一覧はこちら" />
 					</div>
 					<Section heading="フロアマップ">
-						<div className="w-full aspect-video bg-gray-200" />
+						<img src={floorMapImg} alt="フロアマップ" className="w-full h-full object-cover" />
 					</Section>
 					<Section heading="注意事項">
 						<ul className="list-disc list-inside flex flex-col gap-1 pl-2">
