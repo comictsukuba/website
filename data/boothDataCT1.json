@@ -1,0 +1,1065 @@
+{
+	"booths": [
+		{
+			"id": "CT001001",
+			"name": "きらきら星ソーダ",
+			"participant": {
+				"day1": {
+					"type": "booth",
+					"spaceId": 24
+				},
+				"day2": {
+					"type": "none"
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001001.jpeg",
+				"description": "めちゃつえーのシールと伊波ライのポストカードを頒布します！",
+				"links": [
+					{
+						"type": "x",
+						"id": "alto25500467"
+					}
+				],
+				"categoryIdList": [
+					"01",
+					"02"
+				]
+			}
+		},
+		{
+			"id": "CT001002",
+			"name": "青菜に塩　出張店",
+			"participant": {
+				"day1": {
+					"type": "consignment"
+				},
+				"day2": {
+					"type": "consignment"
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001002.PNG",
+				"description": "イラスト+小説の個人誌を委託しています。",
+				"links": [],
+				"categoryIdList": [
+					"02",
+					"05"
+				]
+			}
+		},
+		{
+			"id": "CT001003",
+			"name": "現視研コスプレ班",
+			"participant": {
+				"day1": {
+					"type": "booth",
+					"spaceId": 20
+				},
+				"day2": {
+					"type": "booth",
+					"spaceId": 20
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001003.jpg",
+				"description": "これまでの活動を収めたコスプレ写真集を展示！",
+				"links": [
+					{
+						"type": "x",
+						"id": "gsk_costumeplay"
+					}
+				],
+				"categoryIdList": [
+					"01",
+					"04"
+				]
+			}
+		},
+		{
+			"id": "CT001004",
+			"name": "現代視覚文化研究会小説班",
+			"participant": {
+				"day1": {
+					"type": "booth",
+					"spaceId": 4
+				},
+				"day2": {
+					"type": "booth",
+					"spaceId": 4
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001004.png",
+				"description": "班員によるアンソロジーを販売します！",
+				"links": [
+					{
+						"type": "x",
+						"id": "gsk_novel"
+					}
+				],
+				"categoryIdList": [
+					"05"
+				]
+			}
+		},
+		{
+			"id": "CT001005",
+			"name": "カニさん大好きクラブ",
+			"participant": {
+				"day1": {
+					"type": "booth",
+					"spaceId": 5
+				},
+				"day2": {
+					"type": "booth",
+					"spaceId": 5
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001005.png",
+				"description": "ファッションのZINE、短歌の同人誌、カニさんイラストグッズ",
+				"links": [
+					{
+						"type": "x",
+						"id": "crab_love_club"
+					},
+					{
+						"type": "url",
+						"url": "https://note.com/crab_love_club/n/nc8d670d70a1f"
+					}
+				],
+				"categoryIdList": [
+					"02",
+					"04",
+					"05"
+				]
+			}
+		},
+		{
+			"id": "CT001006",
+			"name": "現代視覚文化研究会アーカイブ班",
+			"participant": {
+				"day1": {
+					"type": "booth",
+					"spaceId": 3
+				},
+				"day2": {
+					"type": "booth",
+					"spaceId": 3
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001006.jpeg",
+				"description": "サークルの歴史まとめ本、レビュー本を頒布します！",
+				"links": [
+					{
+						"type": "x",
+						"id": "gsk_archive"
+					}
+				],
+				"categoryIdList": [
+					"03",
+					"05"
+				]
+			}
+		},
+		{
+			"id": "CT001007",
+			"name": "現代視覚文化研究会　イラスト・漫画班",
+			"participant": {
+				"day1": {
+					"type": "booth",
+					"spaceId": 21
+				},
+				"day2": {
+					"type": "none"
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001007.png",
+				"description": "げんしけんイラスト・漫画班の班員たちのイラストをまとめた画集を頒布します。",
+				"links": [
+					{
+						"type": "x",
+						"id": "gsk_IC"
+					}
+				],
+				"categoryIdList": [
+					"01",
+					"02"
+				]
+			}
+		},
+		{
+			"id": "CT001008",
+			"name": "MXO制作委員会",
+			"participant": {
+				"day1": {
+					"type": "booth",
+					"spaceId": 13
+				},
+				"day2": {
+					"type": "booth",
+					"spaceId": 13
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001008.png",
+				"description": "「読みにくさ」を原体験に、児童書ベースのカラフルな本を出版。",
+				"links": [
+					{
+						"type": "x",
+						"id": "101majianxious"
+					}
+				],
+				"categoryIdList": [
+					"03"
+				]
+			}
+		},
+		{
+			"id": "CT001009",
+			"name": "地方学園都市ツクテリア",
+			"participant": {
+				"day1": {
+					"type": "booth",
+					"spaceId": 18
+				},
+				"day2": {
+					"type": "booth",
+					"spaceId": 18
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001009.png",
+				"description": "『東方project』をテーマにした合同誌を頒布します！",
+				"links": [
+					{
+						"type": "x",
+						"id": "Tsukuba_Toho"
+					}
+				],
+				"categoryIdList": [
+					"01",
+					"02",
+					"03"
+				]
+			}
+		},
+		{
+			"id": "CT001010",
+			"name": "Philia/げんしけん美少女ゲーム制作班",
+			"participant": {
+				"day1": {
+					"type": "booth",
+					"spaceId": 2
+				},
+				"day2": {
+					"type": "booth",
+					"spaceId": 2
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001010.png",
+				"description": "ノベルゲームやADVゲームを作っています！",
+				"links": [
+					{
+						"type": "x",
+						"id": "tsukuba_bishojo"
+					}
+				],
+				"categoryIdList": [
+					"06"
+				]
+			}
+		},
+		{
+			"id": "CT001011",
+			"name": "Caffe mocha",
+			"participant": {
+				"day1": {
+					"type": "booth",
+					"spaceId": 16
+				},
+				"day2": {
+					"type": "booth",
+					"spaceId": 16
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001011.png",
+				"description": "筑波大学モチーフの自作ボドゲ「学費が湧いた」の頒布をします！",
+				"links": [
+					{
+						"type": "x",
+						"id": "mocachimoca"
+					},
+					{
+						"type": "x",
+						"id": "ioriboardgame"
+					}
+				],
+				"categoryIdList": [
+					"06"
+				]
+			}
+		},
+		{
+			"id": "CT001012",
+			"name": "para/philia",
+			"participant": {
+				"day1": {
+					"type": "booth",
+					"spaceId": 1
+				},
+				"day2": {
+					"type": "booth",
+					"spaceId": 1
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001012.png",
+				"description": "PCで遊べるノベルゲームを３作品頒布します！",
+				"links": [
+					{
+						"type": "x",
+						"id": "chiwohau_tenshi"
+					}
+				],
+				"categoryIdList": [
+					"06"
+				]
+			}
+		},
+		{
+			"id": "CT001013",
+			"name": "鮎川邸",
+			"participant": {
+				"day1": {
+					"type": "booth",
+					"spaceId": 6
+				},
+				"day2": {
+					"type": "booth",
+					"spaceId": 6
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001013.png",
+				"description": "メイド概念本作りました！",
+				"links": [],
+				"categoryIdList": [
+					"02",
+					"05"
+				]
+			}
+		},
+		{
+			"id": "CT001014",
+			"name": "きりのはのべる",
+			"participant": {
+				"day1": {
+					"type": "booth",
+					"spaceId": 9
+				},
+				"day2": {
+					"type": "booth",
+					"spaceId": 9
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001014.jpg",
+				"description": "ノベルゲーム制作日誌やポストカードなどのグッズ頒布予定です！",
+				"links": [
+					{
+						"type": "x",
+						"id": "kirinohanovel"
+					},
+					{
+						"type": "url",
+						"url": "https://natsuiro.kirinohanovel.com/"
+					},
+					{
+						"type": "url",
+						"url": "https://youtu.be/z08k__1jYL4?si=_PF8Gwh6YnHuZP8F"
+					}
+				],
+				"categoryIdList": [
+					"02",
+					"06"
+				]
+			}
+		},
+		{
+			"id": "CT001015",
+			"name": "菊莉涼音文芸会",
+			"participant": {
+				"day1": {
+					"type": "consignment"
+				},
+				"day2": {
+					"type": "consignment"
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001015.png",
+				"description": "小説3作品を掲載した同人誌、文庫本サイズで持ち運びも楽々！",
+				"links": [
+					{
+						"type": "x",
+						"id": "otonashi2005"
+					},
+					{
+						"type": "url",
+						"url": "https://note.com/otonashi2005"
+					}
+				],
+				"categoryIdList": [
+					"05"
+				]
+			}
+		},
+		{
+			"id": "CT001016",
+			"name": "ひつじのいえ",
+			"participant": {
+				"day1": {
+					"type": "booth",
+					"spaceId": 25
+				},
+				"day2": {
+					"type": "none"
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001016.png",
+				"description": "ボドゲ「六面競馬」と制作中のゲームの体験版を頒布します！",
+				"links": [
+					{
+						"type": "x",
+						"id": "Hitsuji_Houses"
+					},
+					{
+						"type": "url",
+						"url": "https://note.com/suzunomori/n/n1eecdacfbdfd?sub_rt=share_pw"
+					}
+				],
+				"categoryIdList": [
+					"06"
+				]
+			}
+		},
+		{
+			"id": "CT001017",
+			"name": "『桐の若葉 ―筑波大学学類生論考集―』",
+			"participant": {
+				"day1": {
+					"type": "booth",
+					"spaceId": 14
+				},
+				"day2": {
+					"type": "booth",
+					"spaceId": 14
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/0.png"
+			}
+		},
+		{
+			"id": "CT001018",
+			"name": "俳句結社『桐一葉』",
+			"participant": {
+				"day1": {
+					"type": "booth",
+					"spaceId": 7
+				},
+				"day2": {
+					"type": "booth",
+					"spaceId": 7
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001018.jpg",
+				"description": "俳句結社『桐一葉』です！　裾野の広い俳句を目指しています！",
+				"links": [
+					{
+						"type": "x",
+						"id": "tsukuba_haiku"
+					},
+					{
+						"type": "instagram",
+						"id": "tsukuba_haiku"
+					}
+				],
+				"categoryIdList": [
+					"03",
+					"05"
+				]
+			}
+		},
+		{
+			"id": "CT001019",
+			"name": "驚額の殿堂",
+			"participant": {
+				"day1": {
+					"type": "consignment"
+				},
+				"day2": {
+					"type": "consignment"
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001019.png",
+				"description": "んぽのお友達が書いた技術書をんぽたそのお小遣い価格で販売中！",
+				"links": [
+					{
+						"type": "url",
+						"url": "https://kyogaku.yokohama.dev"
+					},
+					{
+						"type": "x",
+						"id": "kyogaku_dendo"
+					},
+					{
+						"type": "instagram",
+						"id": "kyogaku_dendo"
+					}
+				],
+				"categoryIdList": [
+					"03"
+				]
+			}
+		},
+		{
+			"id": "CT001020",
+			"name": "SF研究会アルビレオ",
+			"participant": {
+				"day1": {
+					"type": "booth",
+					"spaceId": 15
+				},
+				"day2": {
+					"type": "booth",
+					"spaceId": 15
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/0.png"
+			}
+		},
+		{
+			"id": "CT001021",
+			"name": "ながいいぬ",
+			"participant": {
+				"day1": {
+					"type": "booth",
+					"spaceId": 27
+				},
+				"day2": {
+					"type": "consignment"
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001021.png",
+				"description": "ながいいぬです。\n全国旅行本とライブレポ漫画本を頒布する予定です。",
+				"links": [],
+				"categoryIdList": [
+					"02",
+					"04"
+				]
+			}
+		},
+		{
+			"id": "CT001022",
+			"name": "DAB0R",
+			"participant": {
+				"day1": {
+					"type": "consignment"
+				},
+				"day2": {
+					"type": "consignment"
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001022.png",
+				"description": "オリジナル漫画本と2次創作ステッカーを出す予定です　落とす可能性がある",
+				"links": [],
+				"categoryIdList": [
+					"01",
+					"02"
+				]
+			}
+		},
+		{
+			"id": "CT001023",
+			"name": "slobia",
+			"participant": {
+				"day1": {
+					"type": "consignment"
+				},
+				"day2": {
+					"type": "consignment"
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001023.png",
+				"description": "ある世界において存在する宇宙船、XK-2の設定資料集です。",
+				"links": [
+					{
+						"type": "x",
+						"id": "Slobia3"
+					}
+				],
+				"categoryIdList": [
+					"03"
+				]
+			}
+		},
+		{
+			"id": "CT001024",
+			"name": "牢屋のおやつ",
+			"participant": {
+				"day1": {
+					"type": "booth",
+					"spaceId": 26
+				},
+				"day2": {
+					"type": "consignment"
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001024.png",
+				"description": "宿舎で生まれた二人組の、宿舎への愛憎を込めた短歌とエッセイ本",
+				"links": [
+					{
+						"type": "x",
+						"id": "royano_oyatsu"
+					},
+					{
+						"type": "x",
+						"id": "imada_came"
+					},
+					{
+						"type": "x",
+						"id": "azisai_nagi"
+					}
+				],
+				"categoryIdList": [
+					"05"
+				]
+			}
+		},
+		{
+			"id": "CT001025",
+			"name": "魔術専門学群",
+			"participant": {
+				"day1": {
+					"type": "consignment"
+				},
+				"day2": {
+					"type": "consignment"
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001025.png",
+				"description": "光の速さで描き、光の速さで入稿しました！買ってください！",
+				"links": [
+					{
+						"type": "x",
+						"id": "IchiBunnoF"
+					}
+				],
+				"categoryIdList": [
+					"02"
+				]
+			}
+		},
+		{
+			"id": "CT001026",
+			"name": "Astroth",
+			"participant": {
+				"day1": {
+					"type": "consignment"
+				},
+				"day2": {
+					"type": "consignment"
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001026.png",
+				"description": "ノベルゲーム「イチジクの葉 先行体験版」を無料で頒布します！",
+				"links": [
+					{
+						"type": "url",
+						"url": "https://www.astroth-soft.com"
+					},
+					{
+						"type": "x",
+						"id": "Astroth_soft"
+					},
+					{
+						"type": "url",
+						"url": "https://github.com/astroth-soft"
+					}
+				],
+				"categoryIdList": [
+					"06"
+				]
+			}
+		},
+		{
+			"id": "CT001027",
+			"name": "つくば現代短歌会",
+			"participant": {
+				"day1": {
+					"type": "consignment"
+				},
+				"day2": {
+					"type": "consignment"
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001027.png",
+				"description": "つくば現代短歌会の機関誌「つくば集」の頒布を行います",
+				"links": [
+					{
+						"type": "x",
+						"id": "Tsukuba_tanka"
+					},
+					{
+						"type": "url",
+						"url": "https://tsukuba-tankakai.booth.pm/"
+					},
+					{
+						"type": "url",
+						"url": "https://www.tsukutan.com/"
+					}
+				],
+				"categoryIdList": [
+					"05"
+				]
+			}
+		},
+		{
+			"id": "CT001028",
+			"name": "Openfab創房",
+			"participant": {
+				"day1": {
+					"type": "booth",
+					"spaceId": 11
+				},
+				"day2": {
+					"type": "booth",
+					"spaceId": 11
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001028.png",
+				"description": "筑波大学3E203の工作室です。学生、職員誰でも使えます。",
+				"links": [
+					{
+						"type": "x",
+						"id": "openfab_sobo"
+					},
+					{
+						"type": "url",
+						"url": "https://www.cojt.or.jp/tkb/openfab_sobo/index.html"
+					}
+				],
+				"categoryIdList": [
+					"03"
+				]
+			}
+		},
+		{
+			"id": "CT001029",
+			"name": "グルメタワー273階",
+			"participant": {
+				"day1": {
+					"type": "booth",
+					"spaceId": 23
+				},
+				"day2": {
+					"type": "consignment"
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001029.png",
+				"description": "本文4-8ページくらいのヒナのコピー本の予定です。",
+				"links": [],
+				"categoryIdList": [
+					"01",
+					"02"
+				]
+			}
+		},
+		{
+			"id": "CT001030",
+			"name": "全国的に晴れやか",
+			"participant": {
+				"day1": {
+					"type": "booth",
+					"spaceId": 28
+				},
+				"day2": {
+					"type": "consignment"
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001030.png",
+				"description": "メ創３年“晴れやか”による個人出展です。撮影した写真や、ZINEの頒布、ちょっとした作品の展示なども予定しています。",
+				"links": [
+					{
+						"type": "x",
+						"id": "kani__no__"
+					},
+					{
+						"type": "instagram",
+						"id": "hareyaka.photo"
+					}
+				],
+				"categoryIdList": [
+					"04"
+				]
+			}
+		},
+		{
+			"id": "CT001031",
+			"name": "つくばナード出版会",
+			"participant": {
+				"day1": {
+					"type": "booth",
+					"spaceId": 8
+				},
+				"day2": {
+					"type": "booth",
+					"spaceId": 8
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001031.png",
+				"description": "つくばの学生が紡いだ、青春文学です。ぜひお買い求めください！",
+				"links": [
+					{
+						"type": "x",
+						"id": "n2a_tsukuba"
+					}
+				],
+				"categoryIdList": [
+					"03",
+					"05"
+				]
+			}
+		},
+		{
+			"id": "CT001032",
+			"name": "工学系団体合同",
+			"participant": {
+				"day1": {
+					"type": "booth",
+					"spaceId": 10
+				},
+				"day2": {
+					"type": "booth",
+					"spaceId": 10
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001032.png",
+				"description": "工学系団体合同です！同人誌と筑波大学の工学系団体・サークルのグッズ出します！",
+				"links": [
+					{
+						"type": "x",
+						"id": "AndrzejAvionix"
+					}
+				],
+				"categoryIdList": [
+					"03"
+				]
+			}
+		},
+		{
+			"id": "CT001033",
+			"name": "天晴ぱれっと",
+			"participant": {
+				"day1": {
+					"type": "booth",
+					"spaceId": 22
+				},
+				"day2": {
+					"type": "consignment"
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001033.png",
+				"description": "プリティーシリーズのイラスト本、フレカ交換も！",
+				"links": [
+					{
+						"type": "x",
+						"id": "uwusola"
+					},
+					{
+						"type": "x",
+						"id": "priqr"
+					},
+					{
+						"type": "url",
+						"url": "https://www.pixiv.net/users/31664410"
+					}
+				],
+				"categoryIdList": [
+					"01",
+					"02"
+				]
+			}
+		},
+		{
+			"id": "CT001034",
+			"name": "WORD編集部",
+			"participant": {
+				"day1": {
+					"type": "booth",
+					"spaceId": 12
+				},
+				"day2": {
+					"type": "booth",
+					"spaceId": 12
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001034.png",
+				"description": "『WORD Best Selection 6号』を再販！お待ちしています。",
+				"links": [
+					{
+						"type": "url",
+						"url": "https://www.word-ac.net"
+					},
+					{
+						"type": "url",
+						"url": "https://github.com/WORD-COINS"
+					},
+					{
+						"type": "x",
+						"id": "word_tsukuba"
+					}
+				],
+				"categoryIdList": [
+					"02",
+					"03",
+					"05"
+				]
+			}
+		},
+		{
+			"id": "CT001035",
+			"name": "知識情報・図書館学類誌milk",
+			"participant": {
+				"day1": {
+					"type": "consignment"
+				},
+				"day2": {
+					"type": "consignment"
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001035.png",
+				"description": "バックナンバーを全て無料で頒布いたします。ぜひ手にお取りを！",
+				"links": [
+					{
+						"type": "url",
+						"url": "https://milk.klis.tsukuba.ac.jp/"
+					},
+					{
+						"type": "x",
+						"id": "KLISMILK"
+					}
+				],
+				"categoryIdList": [
+					"03",
+					"05"
+				]
+			}
+		},
+		{
+			"id": "CT001036",
+			"name": "筑波きらら同好会",
+			"participant": {
+				"day1": {
+					"type": "booth",
+					"spaceId": 17
+				},
+				"day2": {
+					"type": "booth",
+					"spaceId": 17
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001036.png",
+				"description": "まんがタイムきららに関する内容を記した会誌「Slyuda」を頒布します！",
+				"links": [
+					{
+						"type": "x",
+						"id": "ITFKiraraCircle"
+					}
+				],
+				"categoryIdList": [
+					"01",
+					"02"
+				]
+			}
+		},
+		{
+			"id": "CT001038",
+			"name": "雑誌『むらくも』編集委員会",
+			"participant": {
+				"day1": {
+					"type": "consignment"
+				},
+				"day2": {
+					"type": "consignment"
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001038.png",
+				"description": "雲心月性の著者たちが雲烟飛動して雲蒸竜変する雑誌、ご覧あれ。",
+				"links": [],
+				"categoryIdList": [
+					"05"
+				]
+			}
+		},
+		{
+			"id": "CT001039",
+			"name": "yukidokemizu",
+			"participant": {
+				"day1": {
+					"type": "booth",
+					"spaceId": 19
+				},
+				"day2": {
+					"type": "booth",
+					"spaceId": 19
+				}
+			},
+			"profile": {
+				"card": "/cards/CT1/CT001039.jpg",
+				"description": "よろずレポート本「Melting Snow 1」と自費シールを頒布！",
+				"links": [
+					{
+						"type": "x",
+						"id": "yukimizu7189"
+					},
+					{
+						"type": "url",
+						"url": "https://yukidokemizu.com/"
+					}
+				],
+				"categoryIdList": [
+					"03"
+				]
+			}
+		}
+	]
+}

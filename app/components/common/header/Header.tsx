@@ -1,38 +1,80 @@
-
+import { motion } from "motion/react";
 import type { JSX } from "react";
-import { Link } from "react-router";
+import { NavLink } from "react-router";
+import logoLightImg from "~/assets/logo-light.png";
+import logoDarkImg from "~/assets/logo-dark.png";
+
 import { HamburgerMenu } from "~/components/common/header/HamburgerMenu";
 
 export function Header(): JSX.Element {
-    return (
-        <header className="bg-[#00C1D4] text-white py-4 px-6 shadow-md font-nav h-[48px] ">
-            <div className="container mx-auto flex items-center justify-between h-full">
+	return (
+		<header className="bg-bg text-fg px-6 shadow-md font-nav h-fit w-full">
+			<div className="w-full max-w-[1024px] h-20 mx-auto py-2 flex gap-8">
+				<a href="/" className="h-full w-fit dark:hidden">
+					<img src={logoLightImg} alt="Logo Icon" className="h-full" />
+				</a>
+				<a href="/" className="h-full w-fit hidden dark:block">
+					<img src={logoDarkImg} alt="Logo Icon" className="h-full" />
+				</a>
+				<nav className="hidden md:flex gap-6 h-full items-center ml-6">
+					<ul className="contents">
+						<li className="h-full">
+							<NavLinkItem to="/">
+								ホーム
+							</NavLinkItem>
+						</li>
+						<li className="h-full">
+							<NavLinkItem to="/news">
+								お知らせ
+							</NavLinkItem>
+						</li>
+						<li className="h-full">
+							<NavLinkItem to="/about">
+								コミックつくば！とは？
+							</NavLinkItem>
+						</li>
+						<li className="h-full">
+							<NavLinkItem isNew to="/events/CT1">
+								開催情報
+							</NavLinkItem>
+						</li>
+					</ul>
+				</nav>
 
-                {/* PC用ナビゲーション（md以上で表示） */}
-                <nav className="hidden md:flex flex-1 justify-center font-bold">
-                    <ul className="flex space-x-12 text-lg">
-                        <li className="px-4 py-2 rounded-md transition-colors duration-200 ease-in-out hover:bg-white hover:text-[#00C1D4]">
-                            <Link to="/">HOME</Link>
-                        </li>
-                        <li className="px-4 py-2 rounded-md transition-colors duration-200 ease-in-out hover:bg-white hover:text-[#00C1D4]">
-                            <Link to="/news">NEWS</Link>
-                        </li>
-                        <li className="px-4 py-2 rounded-md transition-colors duration-200 ease-in-out hover:bg-white hover:text-[#00C1D4]">
-                            <Link to="/application">参加案内</Link>
-                        </li>
-                        <li className="px-4 py-2 rounded-md transition-colors duration-200 ease-in-out hover:bg-white hover:text-[#00C1D4]">
-                            <Link to="/about">コミックつくば！とは？</Link>
-                        </li>
-                    </ul>
-                </nav>
-
-                {/* スマホ用ハンバーガーメニュー（md未満で表示） */}
-                <div className="md:hidden ">
-                    <HamburgerMenu />
-                </div>
-            </div>
-        </header>
-    );
+				{/* スマホ用ハンバーガーメニュー（md未満で表示） */}
+				<div className="block md:hidden ml-auto">
+					<HamburgerMenu />
+				</div>
+			</div>
+		</header>
+	);
 }
 
-
+function NavLinkItem({ to, isNew = false, children }: { to: string; isNew?: boolean; children: React.ReactNode }): JSX.Element {
+	return (
+		<NavLink to={to} viewTransition className={`w-full h-full flex items-center justify-center relative px-4
+			${isNew && "after:content-['NEW'] after:absolute after:top-0 after:-right-1 after:bg-red-500 after:text-white after:text-xs after:px-1.5 after:py-0.5 after:rounded-sm after:font-bold after:border-bg after:border-2"}`}>
+			{
+				({ isActive }) => (
+					<>
+						{
+							isActive && <motion.div
+								className="absolute bg-brand-main dark:bg-brand-adjusted w-20 h-10 rounded-[50%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+								transition={{ type: "spring", duration: 0.5 }}
+								initial={{ rotate: -10 }}
+								animate={{ rotate: -10 }}
+								layoutId="nav-link-active-indicator"
+							/>
+						}
+						<motion.span className={`z-10 whitespace-nowrap text-fg`}
+							animate={{
+								fontWeight: isActive ? 700 : 500,
+							}}>
+							{children}
+						</motion.span>
+					</>
+				)
+			}
+		</NavLink>
+	);
+}
