@@ -35,7 +35,7 @@ export function BoothInfoCard({ data, alwaysExpanded = false }: { data: BoothVie
 	return (
 		<div className="w-full h-full p-4 border-[length:1px] border-fg-blink grid grid-cols-[auto_1fr_auto] gap-x-4 grid-rows-[auto_1fr] rounded-lg">
 			{/* icon */}
-			<div className="w-14 h-14 bg-fg-blink rounded-lg overflow-hidden">
+			<div className="w-14 h-14 bg-white rounded-lg overflow-hidden">
 				{
 					data.cardUrl && <img src={data.cardUrl} alt={`${data.name} カード画像`} className="w-full h-full object-cover object-bottom [image-rendering:-webkit-optimize-contrast]" />
 				}
