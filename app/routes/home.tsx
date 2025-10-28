@@ -44,7 +44,7 @@ export default function Route({ loaderData }: Route.ComponentProps) {
             </div>
             <div className="space-y-4">
               <div className="mt-4 text-xl font-bold">PLACE</div>
-              <div className="text-5xl font-bold">筑波大学内</div>
+              <div className="text-5xl font-bold">筑波大学 3A416 教室</div>
             </div>
           </div>
 
