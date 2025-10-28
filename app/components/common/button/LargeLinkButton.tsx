@@ -11,7 +11,7 @@ const MotionLink = motion(
 export function LargeLinkButton({ to, label }: { to: To; label: string }): JSX.Element {
 	return (
 		<MotionLink to={to}
-			className="w-fit h-fit px-6 py-3 bg-brand-adjusted text-white rounded-lg text-lg font-medium"
+			className="w-fit h-fit px-6 py-3 bg-brand-adjusted text-white rounded-lg text-lg font-medium block"
 			initial={{ boxShadow: "0 4px 0px #326d70" }}
 			whileHover={{ backgroundColor: "var(--color-brand-sub3)", boxShadow: "0 4px 0px #798b8c"}}
 			whileTap={{ y: 4, boxShadow: "0 0px 0px #285a5d" }}

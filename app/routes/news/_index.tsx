@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 export default function Route(): JSX.Element {
 	return (
-		<div className="mt-12 mb-28 font-bold max-w-[720px] mx-auto"> {/* News */}
+		<div className="mt-12 mb-28 font-bold max-w-screen-xl mx-auto"> {/* News */}
 
 			{/* メタデータ -----✧ */}
 			<title>お知らせ ✧ コミックつくば！</title>

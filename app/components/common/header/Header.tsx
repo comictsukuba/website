@@ -1,7 +1,8 @@
 import { motion } from "motion/react";
 import type { JSX } from "react";
 import { NavLink } from "react-router";
-import logoImg from "~/assets/logo.png";
+import logoLightImg from "~/assets/logo-light.png";
+import logoDarkImg from "~/assets/logo-dark.png";
 
 import { HamburgerMenu } from "~/components/common/header/HamburgerMenu";
 
@@ -9,8 +10,11 @@ export function Header(): JSX.Element {
 	return (
 		<header className="bg-bg text-fg px-6 shadow-md font-nav h-fit w-full">
 			<div className="w-full max-w-[1024px] h-20 mx-auto py-2 flex gap-8">
-				<a href="/" className="h-full w-fit">
-					<img src={logoImg} alt="Logo Icon" className="h-full" />
+				<a href="/" className="h-full w-fit dark:hidden">
+					<img src={logoLightImg} alt="Logo Icon" className="h-full" />
+				</a>
+				<a href="/" className="h-full w-fit hidden dark:block">
+					<img src={logoDarkImg} alt="Logo Icon" className="h-full" />
 				</a>
 				<nav className="hidden md:flex gap-6 h-full items-center ml-6">
 					<ul className="contents">

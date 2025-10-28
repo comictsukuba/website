@@ -56,7 +56,7 @@ export default function Route({ loaderData }: Route.ComponentProps) {
 
       </div>
 
-      <div className="mt-12 font-bold md:max-w-[800px] px-6 mx-auto"> {/* News */}
+      <div className="mt-12 font-bold max-w-screen-xl px-6 mx-auto"> {/* News */}
         <h2 className="text-center text-3xl mb-12">NEWS</h2>
         <div className="mt-4 space-y-4">
           <div className="grid grid-cols-3 items-center border-black border-b-2 py-2 transition-transform duration-200 ease-out hover:scale-105">
