@@ -42,7 +42,7 @@ export default function Index({ loaderData }: Route.ComponentProps): JSX.Element
                 bgColor: "#fee2e2",
                 fgColor: "#991b1b",
             }] : []),
-            ...booth.profile?.categoryIdList.map((catId) => {
+            ...booth.profile?.categoryIdList?.map((catId) => {
                 const category = loaderData.categories[catId];
                 // category.color is expected to be a hex string like "#rrggbb".
                 // compute a darker foreground color while preserving hue by converting to HSL
@@ -122,7 +122,7 @@ export default function Index({ loaderData }: Route.ComponentProps): JSX.Element
                 } as BoothTagViewModel;
             }) || [],
         ],
-        links: booth.profile?.links.map((link) => {
+        links: booth.profile?.links?.map((link) => {
             switch (link.type) {
                 case "x":
                     return {
@@ -198,7 +198,7 @@ export default function Index({ loaderData }: Route.ComponentProps): JSX.Element
                 <div className="w-full h-fit flex flex-col gap-2">
                     <input className="w-full h-12 px-6 bg-bg-muted rounded-xl placeholder-fg-subtle"
                         type="text"
-                        placeholder="サークル名・キーワードで検索..."
+                        placeholder="出展名・キーワードで検索..."
                         value={filterInput}
                         onChange={(e) => setFilterInput(e.target.value)}
                     />

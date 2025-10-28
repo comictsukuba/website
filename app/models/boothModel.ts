@@ -84,8 +84,8 @@ export const BoothModelSchema = z.object({
 	profile: z.object({
 		card: z.string().optional(),
 		description: z.string().max(60).optional(),
-		links: z.array(BoothLinkSchema).min(0).max(3),
-		categoryIdList: z.array(BoothCategoryIdSchema).min(1).max(3),
+		links: z.array(BoothLinkSchema).min(0).max(3).optional(),
+		categoryIdList: z.array(BoothCategoryIdSchema).min(1).max(3).optional(),
 	}).optional()
 });
 

@@ -462,6 +462,9 @@
 					"type": "booth",
 					"spaceId": 14
 				}
+			},
+			"profile": {
+				"card": "/cards/CT1/0.png"
 			}
 		},
 		{
@@ -541,6 +544,9 @@
 					"type": "booth",
 					"spaceId": 15
 				}
+			},
+			"profile": {
+				"card": "/cards/CT1/0.png"
 			}
 		},
 		{
