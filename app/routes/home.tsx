@@ -1,6 +1,8 @@
 import { Link } from "react-router";
 import LinkButton from "~/components/common/button/LinkButton";
 import type { Route } from "./+types/home";
+import logoLightImg from "~/assets/logo-light.png";
+import logoDarkImg from "~/assets/logo-dark.png";
 
 export function loader({ context }: Route.LoaderArgs) {
   return { message: context.cloudflare.env.VALUE_FROM_CLOUDFLARE };
@@ -31,11 +33,18 @@ export default function Route({ loaderData }: Route.ComponentProps) {
         </div>
         <div className="w-full h-full md:w-1/2 flex flex-col items-center self-start space-y-20"> {/* 右側 */}
           <img
-            src={"/pictures/logo.png"}
+            src={logoLightImg}
             alt="コミックつくばのロゴ"
             width={440}
             height={440}
-            className="w-full h-auto"
+            className="w-full h-auto dark:hidden"
+          />
+          <img
+            src={logoDarkImg}
+            alt="コミックつくばのロゴ"
+            width={440}
+            height={440}
+            className="w-full h-auto hidden dark:block"
           />
           <div className="text-center md:text-left flex flex-col items-center md:items-start space-y-6">
             <div className="space-y-4">
