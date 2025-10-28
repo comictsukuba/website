@@ -1,4 +1,3 @@
-import { Link } from "react-router";
 
 export default function Route() {
 	return (
@@ -11,7 +10,13 @@ export default function Route() {
 
 			<h1 className="text-3xl font-bold">Contact</h1>
 			<p className="mt-8">
-				ご連絡は準備会メールアドレスへ（comictsukubastaff@gmail.com）
+				ご連絡は準備会メールアドレスへ（
+				<a className="underline" href="mailto:comictsukubastaff@gmail.com">
+					comictsukubastaff@gmail.com
+				</a>
+				）
+			</p>
+			<p>
 				お気軽にお問い合わせください。
 			</p>
 		</div>
