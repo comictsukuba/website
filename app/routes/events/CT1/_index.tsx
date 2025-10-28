@@ -19,7 +19,7 @@ export default function Index({ loaderData }: Route.ComponentProps): JSX.Element
 	return (
 		<>
 			<div className="relative bg-[url('/pictures/banner_CT1.png')] bg-cover bg-top w-full max-h-[360px] aspect-[16/9] mx-auto flex items-end justify-end px-4 pb-3">
-				<h1 className="z-10 text-2xl font-bold text-bg">第１回コミックつくば！開催案内</h1>
+				<h1 className="z-10 text-2xl font-bold text-[#fbf9fa]">第１回コミックつくば！開催案内</h1>
 				<div className="z-0 absolute h-1/2 bottom-0 left-0 right-0 bg-gradient-to-t from-[rgba(0,0,0,0.8)] to-transparent mix-blend-overlay"></div>
 			</div>
 			<section className="w-full max-w-[1024px] h-fit mx-auto px-4 py-6 flex flex-col gap-6">
