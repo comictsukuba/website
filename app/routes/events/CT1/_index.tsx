@@ -10,7 +10,7 @@ import type { Route } from "./+types/_index";
 export async function loader({ params }: Route.LoaderArgs): Promise<{ date: string, place: string, participantCount: string }> {
 	return {
 		date: `第51回雙峰祭当日（${new Date("2025-11-02").toLocaleDateString("ja-JP")}, ${new Date("2025-11-03").toLocaleDateString("ja-JP")}）`,
-		place: "筑波大学内",
+		place: "筑波大学 3A416 教室",
 		participantCount: "38", // TODO: 仮の値。バックエンドから取得できるようになったら置き換える
 	};
 }
@@ -50,7 +50,16 @@ export default function Index({ loaderData }: Route.ComponentProps): JSX.Element
 						<img src={floorMapImg} alt="フロアマップ" className="w-full h-full object-cover" />
 					</Section>
 					<Section heading="注意事項">
-						<ul className="list-disc list-inside flex flex-col gap-1 pl-2">
+						<ul className="list-disc list-inside flex flex-col gap-1 pl-2 text-fg">
+							<li>
+								蓋が閉じる飲み物以外の飲食物の持ち込みはお控えください。
+							</li>
+							<li>
+								開会は10時、閉会は17時を予定しております。雙峰祭の開催時間とは異なります。
+							</li>
+							<li>
+								出展者の募集は既に締め切りました。
+							</li>
 						</ul>
 					</Section>
 				</div>
