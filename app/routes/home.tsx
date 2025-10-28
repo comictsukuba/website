@@ -82,9 +82,9 @@ export default function Route({ loaderData }: Route.ComponentProps) {
       </div>
 
       <div className="mt-8 flex justify-center items-center text-md md:text-xl font-bold">
-        <Link to="/general" className="hover:bg-gray-200 transition-colors duration-200 ease-in-out px-10 md:px-14 py-8 rounded-md hover:underline transition-transform duration-200 ease-out hover:scale-105" >一般参加について</Link>
+        <Link to="/general" className="hover:bg-bg-muted transition-colors duration-200 ease-in-out px-10 md:px-14 py-8 rounded-md hover:underline transition-transform duration-200 ease-out hover:scale-105" >一般参加について</Link>
         <div className="h-16 border-l-2 border-black"></div>
-        <Link to="/exhibit" className="hover:bg-gray-200 transition-colors duration-200 ease-in-out px-10 md:px-14 py-8 rounded-md hover:underline transition-transform duration-200 ease-out hover:scale-105" >出展について</Link>
+        <Link to="/exhibit" className="hover:bg-bg-muted transition-colors duration-200 ease-in-out px-10 md:px-14 py-8 rounded-md hover:underline transition-transform duration-200 ease-out hover:scale-105" >出展について</Link>
       </div>
 
     </div>
