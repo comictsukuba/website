@@ -60,21 +60,21 @@ export default function Route({ loaderData }: Route.ComponentProps) {
         <h2 className="text-center text-3xl mb-12">NEWS</h2>
         <div className="mt-4 space-y-4">
           <div className="grid grid-cols-3 items-center border-black border-b-2 py-2 transition-transform duration-200 ease-out hover:scale-105">
-            <span className="md:text-lg text-md text-left pl-6">2025.09.20</span>
+            <span className="md:text-lg text-md text-left pl-6">2025.10.29</span>
             <span className="md:text-xl text-lg text-center">
-              <Link to="/news/4" className="hover:underline">第１回コミックつくば！開催日決定！</Link>
+              <Link to="/news/4" className="hover:underline">第1回開催情報</Link>
+            </span>
+          </div>
+          <div className="grid grid-cols-3 items-center border-black border-b-2 py-2 transition-transform duration-200 ease-out hover:scale-105">
+            <span className="md:text-lg text-md text-left pl-6">2025.08.01</span>
+            <span className="md:text-xl text-lg text-center">
+              <Link to="/news/3" className="hover:underline">出展参加申し込み開始</Link>
             </span>
           </div>
           <div className="grid grid-cols-3 items-center border-black border-b-2 py-2 transition-transform duration-200 ease-out hover:scale-105">
             <span className="md:text-lg text-md text-left pl-6">2025.04.01</span>
             <span className="md:text-xl text-lg text-center">
-              <Link to="/news/3" className="hover:underline">出展者募集開始について</Link>
-            </span>
-          </div>
-          <div className="grid grid-cols-3 items-center border-black border-b-2 py-2 transition-transform duration-200 ease-out hover:scale-105">
-            <span className="md:text-lg text-md text-left pl-6">2025.04.01</span>
-            <span className="md:text-xl text-lg text-center">
-              <Link to="/news/1" className="hover:underline">webサイト開設のお知らせ</Link>
+              <Link to="/news/1" className="hover:underline">Webサイト開設のお知らせ</Link>
             </span>
           </div>
         </div>
