@@ -27,6 +27,10 @@ export default function Index({ loaderData }: Route.ComponentProps): JSX.Element
 				{/* メタデータ -----✧ */}
 				<title>第１回コミックつくば！開催案内 ✧ コミックつくば！</title>
 				<meta name="description" content="コミックつくば！公式サイトです。"></meta>
+				<meta property="og:image" content="/pictures/banner_CT1.png"></meta>
+				<meta property="og:url" content="https://comictsukuba.com/events/CT1"></meta>
+				<meta property="og:title" content="第１回コミックつくば！開催案内"></meta>
+				<meta name="twitter:card" content="summary"></meta>
 				{/* ✧-------------- */}
 
 				<div className="w-full h-fit flex flex-col gap-6">
