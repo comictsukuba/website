@@ -15,6 +15,12 @@ export default function Route({ loaderData }: Route.ComponentProps) {
       {/* メタデータ -----✧ */}
       <title>ホーム ✧ コミックつくば！</title>
       <meta name="description" content="コミックつくば！公式サイトです。"></meta>
+      <meta property="og:image" content="https://www.comic-tsukuba.com/pictures/logo.png"></meta>
+      <meta property="og:url" content="https://www.comic-tsukuba.com/"></meta>
+      <meta property="og:title" content="ホーム"></meta>
+      <meta property="og:description" content="コミックつくば！公式サイトです。"></meta>
+      <meta property="og:site_name" content="コミックつくば！"></meta>
+      <meta name="twitter:card" content="summary"></meta>
       {/* ✧-------------- */}
 
       <Link to={"/events/CT1"} className="block h-fit bg-brand-adjusted text-white text-center text-xl md:text-3xl font-bold py-4"> {/* 一番上のとこ */}

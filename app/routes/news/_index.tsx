@@ -8,6 +8,12 @@ export default function Route(): JSX.Element {
 			{/* メタデータ -----✧ */}
 			<title>お知らせ ✧ コミックつくば！</title>
 			<meta name="description" content="コミックつくば！公式サイトです。"></meta>
+			<meta property="og:image" content="https://www.comic-tsukuba.com/pictures/logo.png"></meta>
+			<meta property="og:url" content="https://www.comic-tsukuba.com/news"></meta>
+			<meta property="og:title" content="お知らせ"></meta>
+			<meta property="og:description" content="コミックつくば！公式サイトです。"></meta>
+			<meta property="og:site_name" content="コミックつくば！"></meta>
+			<meta name="twitter:card" content="summary"></meta>
 			{/* ✧-------------- */}
 
 			<h2 className="text-center text-3xl mb-12">NEWS</h2>
