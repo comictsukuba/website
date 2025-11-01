@@ -747,12 +747,10 @@
 			"name": "Openfab創房",
 			"participant": {
 				"day1": {
-					"type": "booth",
-					"spaceId": 11
+					"type": "consignment"
 				},
 				"day2": {
-					"type": "booth",
-					"spaceId": 11
+					"type": "consignment"
 				}
 			},
 			"profile": {
