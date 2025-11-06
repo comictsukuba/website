@@ -13,7 +13,7 @@ export function Footer(): JSX.Element {
                     <ul className="grid grid-cols-[auto_1fr] gap-x-2 gap-y-1 text-sm">
                         <li className="contents">
                             <MailIcon size={20} />
-                            <span>info@comic-tsukuba.com</span>
+                            <span>comictsukubastaff@gmail.com</span>
                         </li>
                         <li className="contents">
                             <TwitterIcon size={20} />
