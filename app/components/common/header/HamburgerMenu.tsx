@@ -54,6 +54,9 @@ export function HamburgerMenu(): JSX.Element {
 						<li className="h-fit">
 							<NavLinkItem isNew to="/events/CT1" handleClose={handleClose}>開催情報</NavLinkItem>
 						</li>
+						<li className="h-fit">
+							<NavLinkItem to="/contact" handleClose={handleClose}>お問い合わせ</NavLinkItem>
+						</li>
 					</ul>
 				</nav>
 				<div className="w-11/12 h-[1px] bg-fg-blink self-center mb-4" />

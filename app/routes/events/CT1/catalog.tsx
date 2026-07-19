@@ -182,7 +182,7 @@ export default function Index({ loaderData }: Route.ComponentProps): JSX.Element
     }, [showFilterMenu]);
 
     return (
-        <div className="w-[1024px] max-w-full flex flex-col gap-6 px-4 py-6 mx-auto">
+        <div className="w-[1024px] max-w-full flex flex-col gap-6 px-6 md:px-8 py-6 mx-auto">
 
             {/* メタデータ -----✧ */}
             <title>出展一覧 ✧ コミックつくば！</title>

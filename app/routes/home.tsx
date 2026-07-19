@@ -17,7 +17,7 @@ export function loader({ context }: Route.LoaderArgs) {
 export default function Route({ loaderData }: Route.ComponentProps) {
   const { latestNews } = loaderData;
   return (
-    <div className="max-w-screen-xl mx-auto px-4 md:px-8 pb-12"> {/* body全体 */}
+    <div className="max-w-screen-xl mx-auto px-6 md:px-8 pb-12"> {/* body全体 */}
 
       {/* メタデータ -----✧ */}
       <title>ホーム ✧ コミックつくば！</title>
@@ -35,7 +35,7 @@ export default function Route({ loaderData }: Route.ComponentProps) {
         <span>{"＞＞＞ 第１回コミックつくば！ 雙峰祭にて開催決定！ ＜＜＜"}</span>
       </Link>
       */}
-      <div className="flex flex-col md:flex-row items-center gap-x-12 mt-8"> {/* メインのとこ */}
+      <div className="flex flex-col md:flex-row items-center gap-x-12 gap-y-16 mt-8"> {/* メインのとこ */}
         <div className="flex md:w-[60%] w-full  justify-center items-center"> {/* 左側 */}
           <img
             src={"/pictures/web.png"}
@@ -81,12 +81,12 @@ export default function Route({ loaderData }: Route.ComponentProps) {
       </div>
 
       <div className="mt-12 font-bold max-w-screen-xl mx-auto"> {/* News */}
-        <h2 className="text-center text-3xl mb-12">NEWS</h2>
+        <h2 className="text-center text-3xl mb-12">お知らせ</h2>
         <div className="mt-4 space-y-4">
           {latestNews.map((news) => (
             <div key={news.id} className="grid grid-cols-3 items-center border-black dark:border-white border-b-2 py-2 transition-transform duration-200 ease-out hover:scale-105">
-              <span className="md:text-lg text-md text-left pl-6">{news.date}</span>
-              <span className="md:text-xl text-lg text-center">
+              <span className="col-span-1 md:text-lg text-md text-left pl-6">{news.date}</span>
+              <span className="col-span-2 md:text-xl text-lg text-left pl-4">
                 <Link to={`/news/${news.id}`} className="hover:underline">{news.title}</Link>
               </span>
             </div>

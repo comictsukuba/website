@@ -11,7 +11,7 @@ export default function Route({ loaderData }: Route.ComponentProps) {
 	const { newsList } = loaderData;
 
 	return (
-		<div className="mt-12 mb-28 font-bold max-w-screen-xl mx-auto px-4 md:px-8"> {/* News */}
+		<div className="mt-12 mb-28 font-bold max-w-screen-xl mx-auto px-6 md:px-8"> {/* News */}
 
 			{/* メタデータ -----✧ */}
 			<title>お知らせ ✧ コミックつくば！</title>
@@ -24,12 +24,12 @@ export default function Route({ loaderData }: Route.ComponentProps) {
 			<meta name="twitter:card" content="summary"></meta>
 			{/* ✧-------------- */}
 
-			<h2 className="text-center text-3xl mb-12">NEWS</h2>
+			<h2 className="text-center text-3xl mb-12">お知らせ</h2>
 			<div className="mt-4 space-y-4">
 				{newsList.map((news) => (
 					<div key={news.id} className="grid grid-cols-3 items-center border-black dark:border-white border-b-2 py-2 transition-transform duration-200 ease-out hover:scale-105">
-						<span className="text-lg text-left pl-6">{news.date}</span>
-						<span className="text-xl text-center">
+						<span className="col-span-1 text-lg text-left pl-6">{news.date}</span>
+						<span className="col-span-2 text-xl text-left pl-4">
 							<Link to={`/news/${news.id}`} className="hover:underline">{news.title}</Link>
 						</span>
 					</div>

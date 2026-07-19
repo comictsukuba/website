@@ -9,7 +9,7 @@ import { HamburgerMenu } from "~/components/common/header/HamburgerMenu";
 export function Header(): JSX.Element {
 	return (
 		<header className="bg-bg text-fg px-6 shadow-md font-nav h-fit w-full">
-			<div className="w-full max-w-[1024px] h-20 mx-auto py-2 flex gap-8">
+			<div className="w-full max-w-[1024px] h-24 mx-auto py-4 flex gap-8">
 				<a href="/" className="h-full w-fit dark:hidden">
 					<img src={logoLightImg} alt="Logo Icon" className="h-full" />
 				</a>
@@ -36,6 +36,11 @@ export function Header(): JSX.Element {
 						<li className="h-full">
 							<NavLinkItem isNew to="/events/CT1">
 								開催情報
+							</NavLinkItem>
+						</li>
+						<li className="h-full">
+							<NavLinkItem to="/contact">
+								お問い合わせ
 							</NavLinkItem>
 						</li>
 					</ul>
