@@ -1,4 +1,9 @@
 import type { JSX } from "react";
+import ctb1Img from "~/assets/CTB1/ctb1.png";
+
+// 画像の縦方向の切り抜き位置を微調整したい場合は、以下の値を書き換えてください。
+// 例: "center top" (上端基準), "center 20%" (上から20%の位置を基準), "center 50%" (中央基準)
+const IMAGE_ALIGNMENT = "center 10%";
 
 export default function Index(): JSX.Element {
 	return (
@@ -16,7 +21,16 @@ export default function Index(): JSX.Element {
 
 			<div className="border-b border-fg-blink pb-6">
 				<h1 className="text-4xl font-bold text-fg tracking-tight">CTB1 アフターレポート</h1>
-				<p className="text-fg-muted mt-3 text-lg font-medium">イベント開催報告</p>
+				<p className="text-fg-muted mt-3 text-lg font-medium">2026.07.20</p>
+			</div>
+
+			<div className="w-full h-auto overflow-hidden rounded-xl shadow-sm">
+				<img 
+					src={ctb1Img} 
+					alt="CTB1" 
+					className="w-full h-auto object-cover max-h-[480px]" 
+					style={{ objectPosition: IMAGE_ALIGNMENT }}
+				/>
 			</div>
 
 			<article className="max-w-none text-fg leading-relaxed space-y-8 text-lg">

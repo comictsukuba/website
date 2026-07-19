@@ -26,9 +26,12 @@ export default function Route({ loaderData }: Route.ComponentProps) {
 			<meta name="twitter:card" content="summary"></meta>
 			{/* ✧-------------- */}
 
-			<h1 className="text-3xl font-bold">{news.title}</h1>
+			<div className="border-b border-fg-blink pb-6 max-w-2xl mx-auto text-left">
+				<h1 className="text-4xl font-bold text-fg tracking-tight">{news.title}</h1>
+				<p className="text-fg-muted mt-3 text-lg font-medium">{news.date}</p>
+			</div>
 			<div
-				className="mt-8 text-center max-w-2xl mx-auto [&_p]:mt-4 [&_p:first-of-type]:mt-8"
+				className="mt-8 text-left max-w-2xl mx-auto [&_p]:mt-4 [&_p:first-of-type]:mt-8 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:border-l-4 [&_h2]:border-brand-main [&_h2]:dark:border-brand-adjusted [&_h2]:pl-3 [&_h2]:mt-8 [&_h2]:mb-4"
 				dangerouslySetInnerHTML={{ __html: news.htmlContent }}
 			/>
 		</div>

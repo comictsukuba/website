@@ -16,7 +16,7 @@ export default function Route(): JSX.Element {
 			{/* ✧-------------- */}
 
 			<div className="space-y-8 font-bold">
-				<h2 className="text-2xl text-center">コミックつくば！とは？</h2>
+				<h2 className="text-2xl font-bold border-l-4 border-brand-main dark:border-brand-adjusted pl-3 mt-8 mb-4">コミックつくば！とは？</h2>
 				<div>
 					「コミックつくば！」は、筑波大発の同人誌即売会です。
 					つくばという地における同人活動者と来場者との相互交流の促進、特に大学生の間での同人文化の振興を目指して、学生有志により企画されました。
@@ -27,7 +27,7 @@ export default function Route(): JSX.Element {
 				</div>
 			</div>
 			<div className="space-y-8 font-bold">
-				<h2 className="text-2xl text-center">コミックつくば！準備会</h2>
+				<h2 className="text-2xl font-bold border-l-4 border-brand-main dark:border-brand-adjusted pl-3 mt-8 mb-4">コミックつくば！準備会</h2>
 				<div>
 					「コミックつくば！準備会」とは、同イベントの開催に向けた準備や、当日の運営を行う団体です。
 					筑波大学一般学生団体であり、大学公認のサークルという立ち位置にあります。
@@ -39,7 +39,7 @@ export default function Route(): JSX.Element {
 					また、開催日が近づきましたら、開催日当日のみのスタッフも募集いたしますので、そちらの参加もぜひご検討ください。</div>
 			</div>
 			<div className="space-y-8 font-bold">
-				<h2 className="text-2xl text-center">おことわり</h2>
+				<h2 className="text-2xl font-bold border-l-4 border-brand-main dark:border-brand-adjusted pl-3 mt-8 mb-4">おことわり</h2>
 				<div>
 					「コミックつくば！準備会」は、筑波大学一般学生団体でありますが、弊会が運営するイベントについて筑波大学は直接関与しておりません。
 					大学へのお問い合わせはお控えいただき、弊会メールアドレスまでご連絡ください。
