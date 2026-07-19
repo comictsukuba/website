@@ -31,19 +31,13 @@ export function Footer(): JSX.Element {
                         { label: "ホーム", href: "/" },
                         { label: "お知らせ", href: "/news" },
                         { label: "コミックつくば！とは？", href: "/about" },
+                        { label: "開催情報", href: "/events" },
                         { label: "お問い合わせ", href: "/contact" },
-                    ]} />
-                    <NavGroup title="一般参加" links={[
-                        { label: "開催情報", href: "/events/CT1" },
-                        { label: "出展一覧", href: "/events/CT1/catalog" },
-                    ]} />
-                    <NavGroup title="出展参加" links={[
-                        { label: "出展参加申し込み", href: "/exhibit" },
                     ]} />
                 </div>
             </div>
             <div>
-                <p>Copyright &copy; 2025 コミックつくば！準備会 All Rights Reserved.</p>
+                <p>Copyright &copy; 2026 コミックつくば！準備会 All Rights Reserved.</p>
             </div>
         </footer>
     );

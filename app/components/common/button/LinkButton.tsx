@@ -10,18 +10,19 @@ type LinkButtonProps = {
     color?: string;
 };
 
-export function LinkButton({ platform, url, size, color = "#000000" }: LinkButtonProps ): JSX.Element {
-    const icon = platform === "twitter" ? <FiTwitter size={size} style={{ color }} /> : <FaInstagram size={size} style={{ color }} />
+export function LinkButton({ platform, url, size, color }: LinkButtonProps ): JSX.Element {
+    const icon = platform === "twitter" 
+        ? <FiTwitter size={size} style={color ? { color } : undefined} /> 
+        : <FaInstagram size={size} style={color ? { color } : undefined} />
 
     return (
         <Link to={url} target="_blank" rel="noopener noreferer">
             <button
-                className={`flex items-center justify-center transition duration-300`}
+                className={`flex items-center justify-center transition duration-300 ${!color ? "text-[#000000] dark:text-white" : ""}`}
             >
                 {icon}
             </button>
         </Link>
-
     );
 }
 

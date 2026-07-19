@@ -1,14 +1,14 @@
 
 export default function Route() {
 	return (
-		<div className="container mx-auto py-8 text-center">
+		<div className="container mx-auto py-8 px-6 lg:px-8 text-center">
 
 			{/* メタデータ -----✧ */}
 			<title>お問い合わせ ✧ コミックつくば！</title>
 			<meta name="description" content="コミックつくば！公式サイトです。"></meta>
 			{/* ✧-------------- */}
 
-			<h1 className="text-3xl font-bold">Contact</h1>
+			<h1 className="text-3xl font-bold">お問い合わせ</h1>
 			<p className="mt-8">
 				ご連絡は準備会メールアドレスへ（
 				<a className="underline" href="mailto:info@comic-tsukuba.com">

@@ -182,7 +182,7 @@ export default function Index({ loaderData }: Route.ComponentProps): JSX.Element
     }, [showFilterMenu]);
 
     return (
-        <div className="w-[1024px] max-w-full flex flex-col gap-6 px-4 py-6 mx-auto">
+        <div className="w-[1024px] max-w-full flex flex-col gap-6 px-6 lg:px-8 py-6 mx-auto">
 
             {/* メタデータ -----✧ */}
             <title>出展一覧 ✧ コミックつくば！</title>
@@ -261,10 +261,10 @@ export default function Index({ loaderData }: Route.ComponentProps): JSX.Element
                         }
                     </div>
                 </div>
-                <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+                <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
                     {
                         filteredDataList.map((data) => (
-                            <div className="col-span-1 md:hidden" key={data.id} >
+                            <div className="col-span-1 lg:hidden" key={data.id} >
                                 <BoothInfoCard data={data} alwaysExpanded={false} />
                             </div>
                         ))
@@ -272,7 +272,7 @@ export default function Index({ loaderData }: Route.ComponentProps): JSX.Element
                     {
 
                         filteredDataList.map((data) => (
-                            <div className="col-span-1 hidden md:block" key={data.id} >
+                            <div className="col-span-1 hidden lg:block" key={data.id} >
                                 <BoothInfoCard data={data} alwaysExpanded={true} />
                             </div>
                         ))

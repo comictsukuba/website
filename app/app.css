@@ -31,6 +31,10 @@
 	}
 }
 
+html {
+	scrollbar-gutter: stable;
+}
+
 html,
 body {
 	@apply bg-white dark:bg-gray-950 text-gray-950 dark:text-neutral-200;
