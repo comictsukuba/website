@@ -3,14 +3,21 @@ import LinkButton from "~/components/common/button/LinkButton";
 import type { Route } from "./+types/home";
 import logoLightImg from "~/assets/logo-light.png";
 import logoDarkImg from "~/assets/logo-dark.png";
+import { getNewsList } from "~/models/news";
 
 export function loader({ context }: Route.LoaderArgs) {
-  return { message: context.cloudflare.env.VALUE_FROM_CLOUDFLARE };
+  const allNews = getNewsList();
+  const latestNews = allNews.slice(0, 3);
+  return {
+    message: context.cloudflare.env.VALUE_FROM_CLOUDFLARE,
+    latestNews,
+  };
 }
 
 export default function Route({ loaderData }: Route.ComponentProps) {
+  const { latestNews } = loaderData;
   return (
-    <div className="max-w-screen-xl mx-auto pb-12"> {/* body全体 */}
+    <div className="max-w-screen-xl mx-auto px-4 md:px-8 pb-12"> {/* body全体 */}
 
       {/* メタデータ -----✧ */}
       <title>ホーム ✧ コミックつくば！</title>
@@ -23,9 +30,11 @@ export default function Route({ loaderData }: Route.ComponentProps) {
       <meta name="twitter:card" content="summary"></meta>
       {/* ✧-------------- */}
 
-      <Link to={"/events/CT1"} className="block h-fit bg-brand-adjusted text-white text-center text-xl md:text-3xl font-bold py-4"> {/* 一番上のとこ */}
+      {/* 
+      <Link to={"/events/CT1"} className="block h-fit bg-brand-adjusted text-white text-center text-xl md:text-3xl font-bold py-4 px-4">
         <span>{"＞＞＞ 第１回コミックつくば！ 雙峰祭にて開催決定！ ＜＜＜"}</span>
       </Link>
+      */}
       <div className="flex flex-col md:flex-row items-center gap-x-12 mt-8"> {/* メインのとこ */}
         <div className="flex md:w-[60%] w-full  justify-center items-center"> {/* 左側 */}
           <img
@@ -71,27 +80,17 @@ export default function Route({ loaderData }: Route.ComponentProps) {
 
       </div>
 
-      <div className="mt-12 font-bold max-w-screen-xl px-6 mx-auto"> {/* News */}
+      <div className="mt-12 font-bold max-w-screen-xl mx-auto"> {/* News */}
         <h2 className="text-center text-3xl mb-12">NEWS</h2>
         <div className="mt-4 space-y-4">
-          <div className="grid grid-cols-3 items-center border-black border-b-2 py-2 transition-transform duration-200 ease-out hover:scale-105">
-            <span className="md:text-lg text-md text-left pl-6">2025.10.29</span>
-            <span className="md:text-xl text-lg text-center">
-              <Link to="/news/4" className="hover:underline">第1回開催情報</Link>
-            </span>
-          </div>
-          <div className="grid grid-cols-3 items-center border-black border-b-2 py-2 transition-transform duration-200 ease-out hover:scale-105">
-            <span className="md:text-lg text-md text-left pl-6">2025.08.01</span>
-            <span className="md:text-xl text-lg text-center">
-              <Link to="/news/3" className="hover:underline">出展参加申し込み開始</Link>
-            </span>
-          </div>
-          <div className="grid grid-cols-3 items-center border-black border-b-2 py-2 transition-transform duration-200 ease-out hover:scale-105">
-            <span className="md:text-lg text-md text-left pl-6">2025.04.01</span>
-            <span className="md:text-xl text-lg text-center">
-              <Link to="/news/1" className="hover:underline">Webサイト開設のお知らせ</Link>
-            </span>
-          </div>
+          {latestNews.map((news) => (
+            <div key={news.id} className="grid grid-cols-3 items-center border-black dark:border-white border-b-2 py-2 transition-transform duration-200 ease-out hover:scale-105">
+              <span className="md:text-lg text-md text-left pl-6">{news.date}</span>
+              <span className="md:text-xl text-lg text-center">
+                <Link to={`/news/${news.id}`} className="hover:underline">{news.title}</Link>
+              </span>
+            </div>
+          ))}
         </div>
         <div className="text-right mr-4 mt-2 text-sm hover:underline"><Link to="/news">View more »</Link></div>
       </div>

@@ -9,9 +9,7 @@ export default [
 		route("contact", "routes/contact/_index.tsx"),
 		...prefix("news", [
 			index("routes/news/_index.tsx"),
-			route("1", "routes/news/1.tsx"),
-			route("3", "routes/news/3.tsx"),
-			route("4", "routes/news/4.tsx"),
+			route(":id", "routes/news/detail.tsx"),
 		]),
 		...prefix("events", [
 			...prefix("CT1", [
