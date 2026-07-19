@@ -1,6 +1,7 @@
 import { CalendarIcon, LibraryBigIcon, MapPinIcon } from "lucide-react";
 import type { JSX } from "react";
 import floorMapImg from "~/assets/CT1/floor_map.jpg";
+import bannerCT1Img from "~/assets/CT1/banner_CT1.png";
 import { BouncyNumber } from "~/components/common/BouncyNumber";
 import { LargeLinkButton } from "~/components/common/button/LargeLinkButton";
 import { DataList } from "~/components/common/datalist/DataList";
@@ -18,7 +19,10 @@ export async function loader({ params }: Route.LoaderArgs): Promise<{ date: stri
 export default function Index({ loaderData }: Route.ComponentProps): JSX.Element {
 	return (
 		<>
-			<div className="relative bg-[url('/pictures/banner_CT1.png')] bg-cover bg-top w-full max-h-[360px] aspect-[16/9] mx-auto flex items-end justify-end px-4 pb-3">
+			<div 
+				style={{ backgroundImage: `url(${bannerCT1Img})` }}
+				className="relative bg-cover bg-top w-full max-h-[360px] aspect-[16/9] mx-auto flex items-end justify-end px-4 pb-3"
+			>
 				<h1 className="z-10 text-2xl font-bold text-[#fbf9fa]">第１回コミックつくば！開催案内</h1>
 				<div className="z-0 absolute h-1/2 bottom-0 left-0 right-0 bg-gradient-to-t from-[rgba(0,0,0,0.8)] to-transparent mix-blend-overlay"></div>
 			</div>
@@ -27,7 +31,7 @@ export default function Index({ loaderData }: Route.ComponentProps): JSX.Element
 				{/* メタデータ -----✧ */}
 				<title>第１回コミックつくば！開催案内 ✧ コミックつくば！</title>
 				<meta name="description" content="コミックつくば！公式サイトです。"></meta>
-				<meta property="og:image" content="https://www.comic-tsukuba.com/pictures/banner_CT1.png"></meta>
+				<meta property="og:image" content="https://www.comic-tsukuba.com/pictures/logo.png"></meta>
 				<meta property="og:url" content="https://www.comic-tsukuba.com/events/CT1"></meta>
 				<meta property="og:title" content="第１回コミックつくば！開催案内"></meta>
 				<meta property="og:description" content="コミックつくば！公式サイトです。"></meta>

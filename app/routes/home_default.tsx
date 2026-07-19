@@ -3,6 +3,7 @@ import LinkButton from "~/components/common/button/LinkButton";
 import type { Route } from "./+types/home_default";
 import logoLightImg from "~/assets/logo-light.png";
 import logoDarkImg from "~/assets/logo-dark.png";
+import webImg from "~/assets/web.png";
 import { getNewsList } from "~/models/news";
 
 export function loader({ context }: Route.LoaderArgs) {
@@ -38,7 +39,7 @@ export default function Route({ loaderData }: Route.ComponentProps) {
       <div className="flex flex-col md:flex-row md:items-start items-center gap-x-12 gap-y-16 mt-8"> {/* メインのとこ */}
         <div className="flex md:w-1/2 w-full justify-center items-center"> {/* 左側 */}
           <img
-            src={"/pictures/web.png"}
+            src={webImg}
             alt="ポスター画像"
             width={1241}
             height={1754}
