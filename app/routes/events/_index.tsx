@@ -22,6 +22,9 @@ export default function Route(): JSX.Element {
 			<div className="mt-8 h-fit flex justify-center">
 				<LargeLinkButton to="/events/CT1" label="第１回コミックつくば！開催案内" />
 			</div>
+			<div className="mt-8 h-fit flex justify-center">
+				<LargeLinkButton to="/events/CTB1" label="CTB1 アフターレポート" />
+			</div>
 		</div>
 	);
 }

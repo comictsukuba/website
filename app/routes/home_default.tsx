@@ -64,7 +64,7 @@ export default function Route({ loaderData }: Route.ComponentProps) {
           />
           <div className="text-center flex flex-col items-center space-y-4 w-full">
             <div className="text-6xl lg:text-7xl font-bold text-brand-adjusted">
-              第2回計画中！
+              第2回計画中
             </div>
             <div className="text-5xl lg:text-6xl font-bold text-black dark:text-white">
               詳細は後日発表
