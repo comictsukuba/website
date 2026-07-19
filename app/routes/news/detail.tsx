@@ -31,7 +31,7 @@ export default function Route({ loaderData }: Route.ComponentProps) {
 				<p className="text-fg-muted mt-3 text-lg font-medium">{news.date}</p>
 			</div>
 			<div
-				className="mt-8 text-left max-w-2xl mx-auto [&_p]:mt-4 [&_p:first-of-type]:mt-8 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:border-l-4 [&_h2]:border-brand-main [&_h2]:dark:border-brand-adjusted [&_h2]:pl-3 [&_h2]:mt-8 [&_h2]:mb-4"
+				className="mt-8 text-left max-w-2xl mx-auto [&_p]:mt-4 [&_p:first-of-type]:mt-8 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:border-l-4 [&_h2]:border-brand-main [&_h2]:dark:border-brand-adjusted [&_h2]:pl-3 [&_h2]:mt-8 [&_h2]:mb-4 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:my-4 [&_ul]:space-y-2 [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:my-4 [&_ol]:space-y-2 [&_li]:my-1"
 				dangerouslySetInnerHTML={{ __html: news.htmlContent }}
 			/>
 		</div>

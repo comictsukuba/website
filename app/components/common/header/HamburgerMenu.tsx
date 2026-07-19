@@ -46,7 +46,7 @@ export function HamburgerMenu(): JSX.Element {
 						{navigationItems.map((item) => (
 							<li key={item.to} className="h-fit">
 								<NavLinkItem to={item.to} isNew={item.isNew} handleClose={handleClose}>
-									{item.label === "ホーム" ? "HOME" : item.label}
+									{item.label === "ホーム" ? "ホーム" : item.label}
 								</NavLinkItem>
 							</li>
 						))}
