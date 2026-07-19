@@ -3,7 +3,7 @@ import { LargeLinkButton } from "~/components/common/button/LargeLinkButton";
 
 export default function Route(): JSX.Element {
 	return (
-		<div className="container mx-auto py-8 px-6 md:px-8 text-center max-w-screen-xl">
+		<div className="container mx-auto py-8 px-6 lg:px-8 text-center max-w-screen-xl">
 			{/* メタデータ -----✧ */}
 			<title>開催情報一覧 ✧ コミックつくば！</title>
 			<meta name="description" content="コミックつくば！公式サイトの開催情報一覧です。"></meta>

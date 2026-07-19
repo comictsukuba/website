@@ -11,7 +11,7 @@ export default function Route({ loaderData }: Route.ComponentProps) {
 	const { newsList } = loaderData;
 
 	return (
-		<div className="mt-12 mb-28 font-bold max-w-screen-xl mx-auto px-6 md:px-8"> {/* News */}
+		<div className="mt-12 mb-28 font-bold max-w-screen-xl mx-auto px-6 lg:px-8"> {/* News */}
 
 			{/* メタデータ -----✧ */}
 			<title>お知らせ ✧ コミックつくば！</title>

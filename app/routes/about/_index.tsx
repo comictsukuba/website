@@ -2,7 +2,7 @@ import type { JSX } from "react";
 
 export default function Route(): JSX.Element {
 	return (
-		<div className="container mx-auto py-8 px-6 md:px-8 space-y-16 max-w-2xl">
+		<div className="container mx-auto py-8 px-6 lg:px-8 space-y-16 max-w-2xl">
 
 			{/* メタデータ -----✧ */}
 			<title>コミックつくば！とは？ ✧ コミックつくば！</title>

@@ -5,10 +5,11 @@ import logoLightImg from "~/assets/logo-light.png";
 import logoDarkImg from "~/assets/logo-dark.png";
 
 import { HamburgerMenu } from "~/components/common/header/HamburgerMenu";
+import { navigationItems } from "~/config/navigation";
 
 export function Header(): JSX.Element {
 	return (
-		<header className="bg-bg text-fg px-6 shadow-md font-nav h-fit w-full">
+		<header className="bg-bg text-fg px-6 dark:shadow-md font-nav h-fit w-full sticky top-0 z-50">
 			<div className="w-full max-w-[1024px] h-24 mx-auto py-4 flex gap-8">
 				<a href="/" className="h-full w-fit dark:hidden">
 					<img src={logoLightImg} alt="Logo Icon" className="h-full" />
@@ -16,38 +17,20 @@ export function Header(): JSX.Element {
 				<a href="/" className="h-full w-fit hidden dark:block">
 					<img src={logoDarkImg} alt="Logo Icon" className="h-full" />
 				</a>
-				<nav className="hidden md:flex gap-6 h-full items-center ml-6">
+				<nav className="hidden lg:flex gap-6 h-full items-center ml-6">
 					<ul className="contents">
-						<li className="h-full">
-							<NavLinkItem to="/">
-								ホーム
-							</NavLinkItem>
-						</li>
-						<li className="h-full">
-							<NavLinkItem to="/news">
-								お知らせ
-							</NavLinkItem>
-						</li>
-						<li className="h-full">
-							<NavLinkItem to="/about">
-								コミックつくば！とは？
-							</NavLinkItem>
-						</li>
-						<li className="h-full">
-							<NavLinkItem isNew to="/events">
-								開催情報
-							</NavLinkItem>
-						</li>
-						<li className="h-full">
-							<NavLinkItem to="/contact">
-								お問い合わせ
-							</NavLinkItem>
-						</li>
+						{navigationItems.map((item) => (
+							<li key={item.to} className="h-full">
+								<NavLinkItem to={item.to} isNew={item.isNew}>
+									{item.label}
+								</NavLinkItem>
+							</li>
+						))}
 					</ul>
 				</nav>
 
-				{/* スマホ用ハンバーガーメニュー（md未満で表示） */}
-				<div className="block md:hidden ml-auto">
+				{/* スマホ用ハンバーガーメニュー（lg未満で表示） */}
+				<div className="block lg:hidden ml-auto">
 					<HamburgerMenu />
 				</div>
 			</div>

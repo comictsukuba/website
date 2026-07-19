@@ -62,12 +62,14 @@ export default function Route({ loaderData }: Route.ComponentProps) {
             height={440}
             className="w-full h-auto hidden dark:block"
           />
-          <div className="text-center flex flex-col items-center space-y-4 w-full">
-            <div className="text-6xl lg:text-7xl font-bold text-brand-adjusted">
-              第2回計画中！
+          <div className="text-center lg:text-left flex flex-col items-center lg:items-start space-y-6">
+            <div className="space-y-4">
+              <div className="mt-4 text-xl font-bold">DATE</div>
+              <div className="text-5xl font-bold">雙峰祭（11月2日、3日）</div>
             </div>
-            <div className="text-5xl lg:text-6xl font-bold text-black dark:text-white">
-              詳細は後日発表
+            <div className="space-y-4">
+              <div className="mt-4 text-xl font-bold">PLACE</div>
+              <div className="text-5xl font-bold">筑波大学 3A416 教室</div>
             </div>
           </div>
 

@@ -2,6 +2,7 @@ import { InstagramIcon, Menu, TwitterIcon, XIcon } from "lucide-react";
 import { motion } from "motion/react";
 import { useState, type JSX } from "react";
 import { NavLink } from "react-router";
+import { navigationItems } from "~/config/navigation";
 
 export function HamburgerMenu(): JSX.Element {
 	const [isOpen, setIsOpen] = useState(false);
@@ -42,21 +43,13 @@ export function HamburgerMenu(): JSX.Element {
 				</button>
 				<nav className="w-full flex flex-col gap-0 text-fg">
 					<ul className="contents">
-						<li className="h-fit">
-							<NavLinkItem to="/" handleClose={handleClose}>HOME</NavLinkItem>
-						</li>
-						<li className="h-fit">
-							<NavLinkItem to="/news" handleClose={handleClose}>お知らせ</NavLinkItem>
-						</li>
-						<li className="h-fit">
-							<NavLinkItem to="/about" handleClose={handleClose}>コミックつくばとは？</NavLinkItem>
-						</li>
-						<li className="h-fit">
-							<NavLinkItem isNew to="/events" handleClose={handleClose}>開催情報</NavLinkItem>
-						</li>
-						<li className="h-fit">
-							<NavLinkItem to="/contact" handleClose={handleClose}>お問い合わせ</NavLinkItem>
-						</li>
+						{navigationItems.map((item) => (
+							<li key={item.to} className="h-fit">
+								<NavLinkItem to={item.to} isNew={item.isNew} handleClose={handleClose}>
+									{item.label === "ホーム" ? "HOME" : item.label}
+								</NavLinkItem>
+							</li>
+						))}
 					</ul>
 				</nav>
 				<div className="w-11/12 h-[1px] bg-fg-blink self-center mb-4" />

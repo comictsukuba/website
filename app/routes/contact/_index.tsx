@@ -1,7 +1,7 @@
 
 export default function Route() {
 	return (
-		<div className="container mx-auto py-8 px-6 md:px-8 text-center">
+		<div className="container mx-auto py-8 px-6 lg:px-8 text-center">
 
 			{/* メタデータ -----✧ */}
 			<title>お問い合わせ ✧ コミックつくば！</title>
