@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import LinkButton from "~/components/common/button/LinkButton";
-import type { Route } from "./+types/home";
+import type { Route } from "./+types/home_default";
 import logoLightImg from "~/assets/logo-light.png";
 import logoDarkImg from "~/assets/logo-dark.png";
 import { getNewsList } from "~/models/news";
@@ -31,12 +31,12 @@ export default function Route({ loaderData }: Route.ComponentProps) {
       {/* ✧-------------- */}
 
       {/* 
-      <Link to={"/events/CT1"} className="block h-fit bg-brand-adjusted text-white text-center text-xl md:text-3xl font-bold py-4 px-4">
+      <Link to={"/events"} className="block h-fit bg-brand-adjusted text-white text-center text-xl md:text-3xl font-bold py-4 px-4">
         <span>{"＞＞＞ 第１回コミックつくば！ 雙峰祭にて開催決定！ ＜＜＜"}</span>
       </Link>
       */}
-      <div className="flex flex-col md:flex-row items-center gap-x-12 gap-y-16 mt-8"> {/* メインのとこ */}
-        <div className="flex md:w-[60%] w-full  justify-center items-center"> {/* 左側 */}
+      <div className="flex flex-col md:flex-row md:items-start items-center gap-x-12 gap-y-16 mt-8"> {/* メインのとこ */}
+        <div className="flex md:w-1/2 w-full justify-center items-center"> {/* 左側 */}
           <img
             src={"/pictures/web.png"}
             alt="ポスター画像"
@@ -46,7 +46,7 @@ export default function Route({ loaderData }: Route.ComponentProps) {
             className="w-full h-auto max-w-xl md:max-w-2xl object-contain"
           />
         </div>
-        <div className="w-full h-full md:w-1/2 flex flex-col items-center self-start space-y-20"> {/* 右側 */}
+        <div className="w-full h-full md:w-1/2 flex flex-col items-center space-y-20"> {/* 右側 */}
           <img
             src={logoLightImg}
             alt="コミックつくばのロゴ"
@@ -96,7 +96,7 @@ export default function Route({ loaderData }: Route.ComponentProps) {
       </div>
 
       <div className="mt-8 flex justify-center items-center text-md md:text-xl font-bold">
-        <Link to="/events/CT1" className="hover:bg-bg-muted transition-colors duration-200 ease-in-out px-10 md:px-14 py-8 rounded-md hover:underline transition-transform duration-200 ease-out hover:scale-105" >一般参加について</Link>
+        <Link to="/events" className="hover:bg-bg-muted transition-colors duration-200 ease-in-out px-10 md:px-14 py-8 rounded-md hover:underline transition-transform duration-200 ease-out hover:scale-105" >一般参加について</Link>
         <div className="h-16 border-l-2 border-black"></div>
         <Link to="/exhibit" className="hover:bg-bg-muted transition-colors duration-200 ease-in-out px-10 md:px-14 py-8 rounded-md hover:underline transition-transform duration-200 ease-out hover:scale-105" >出展について</Link>
       </div>

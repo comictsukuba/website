@@ -34,7 +34,7 @@ export function Footer(): JSX.Element {
                         { label: "お問い合わせ", href: "/contact" },
                     ]} />
                     <NavGroup title="一般参加" links={[
-                        { label: "開催情報", href: "/events/CT1" },
+                        { label: "開催情報", href: "/events" },
                         { label: "出展一覧", href: "/events/CT1/catalog" },
                     ]} />
                     <NavGroup title="出展参加" links={[

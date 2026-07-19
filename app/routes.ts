@@ -2,7 +2,7 @@ import { type RouteConfig, index, layout, prefix, route } from "@react-router/de
 
 export default [
 	layout("routes/common-layout.tsx", [
-		index("routes/home.tsx"),
+		index("routes/home_default.tsx"),
 		route("about", "routes/about/_index.tsx"),
 		route("exhibit", "routes/exhibit/_index.tsx"),
 		route("general", "routes/general/_index.tsx"),
@@ -12,6 +12,7 @@ export default [
 			route(":id", "routes/news/detail.tsx"),
 		]),
 		...prefix("events", [
+			index("routes/events/_index.tsx"),
 			...prefix("CT1", [
 				index("routes/events/CT1/_index.tsx"),
 				route("catalog", "routes/events/CT1/catalog.tsx"),
