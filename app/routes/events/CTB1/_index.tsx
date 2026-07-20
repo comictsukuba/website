@@ -1,6 +1,7 @@
 import { useState, type JSX } from "react";
 import ctb1Img from "~/assets/CTB1/ctb1_key.png";
 import ctb1KeyOgImg from "~/assets/CTB1/ctb1_key_og.png";
+import ctb1FlyerBackImg from "~/assets/CTB1/ctb1_flyer_back.png";
 import illust1Img from "~/assets/CTB1/illust1.jpeg";
 import illust2Img from "~/assets/CTB1/illust2.jpeg";
 
@@ -28,13 +29,23 @@ export default function Index(): JSX.Element {
 				<p className="text-fg-muted mt-3 text-lg font-medium">2026.07.20</p>
 			</div>
 
-			<div className="w-full h-auto overflow-hidden rounded-xl shadow-sm cursor-zoom-in">
-				<img 
-					src={ctb1Img} 
-					alt="CTB1" 
-					className="w-full h-auto object-cover transition-transform  hover:scale-[1.02]" 
-					onClick={() => setActiveImage(ctb1Img)}
-				/>
+			<div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full h-auto">
+				<div className="overflow-hidden rounded-xl shadow-sm cursor-zoom-in">
+					<img 
+						src={ctb1Img} 
+						alt="CTB1 チラシ 表" 
+						className="w-full h-auto object-cover transition-transform hover:scale-[1.02]" 
+						onClick={() => setActiveImage(ctb1Img)}
+					/>
+				</div>
+				<div className="overflow-hidden rounded-xl shadow-sm cursor-zoom-in">
+					<img 
+						src={ctb1FlyerBackImg} 
+						alt="CTB1 チラシ 裏" 
+						className="w-full h-auto object-cover transition-transform hover:scale-[1.02]" 
+						onClick={() => setActiveImage(ctb1FlyerBackImg)}
+					/>
+				</div>
 			</div>
 
 			<article className="max-w-none text-fg leading-relaxed space-y-8 text-lg">
