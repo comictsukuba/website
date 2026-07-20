@@ -37,7 +37,7 @@ export function Footer(): JSX.Element {
                 </div>
             </div>
             <div>
-                <p>Copyright &copy; 2026 コミックつくば！準備会 All Rights Reserved.</p>
+                <p>Copyright &copy; 2025-{new Date().getFullYear()} コミックつくば！準備会 All Rights Reserved.</p>
             </div>
         </footer>
     );
