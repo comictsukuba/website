@@ -48,10 +48,10 @@ function NavLinkItem({ to, isNew = false, children }: { to: string; isNew?: bool
 						{
 							isActive && <motion.div
 								className="absolute bg-brand-main dark:bg-brand-adjusted w-20 h-10 rounded-[50%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+								style={{ viewTransitionName: "active-nav-indicator" }}
 								transition={{ type: "spring", duration: 0.5 }}
 								initial={{ rotate: -10 }}
 								animate={{ rotate: -10 }}
-								layoutId="nav-link-active-indicator"
 							/>
 						}
 						<motion.span className={`z-10 whitespace-nowrap text-fg`}
