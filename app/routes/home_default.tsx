@@ -3,7 +3,7 @@ import LinkButton from "~/components/common/button/LinkButton";
 import type { Route } from "./+types/home_default";
 import logoLightImg from "~/assets/logo-light.png";
 import logoDarkImg from "~/assets/logo-dark.png";
-import webImg from "~/assets/web.png";
+import webImg from "~/assets/web_default.png";
 import { getNewsList } from "~/models/news";
 
 export function loader({ context }: Route.LoaderArgs) {

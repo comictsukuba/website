@@ -13,7 +13,7 @@ export function Footer(): JSX.Element {
                     <ul className="grid grid-cols-[auto_1fr] gap-x-2 gap-y-1 text-sm">
                         <li className="contents">
                             <MailIcon size={20} />
-                            <span>info@comic-tsukuba.com</span>
+                            <span>info[あっと]comic-tsukuba.com</span>
                         </li>
                         <li className="contents">
                             <TwitterIcon size={20} />
@@ -37,7 +37,7 @@ export function Footer(): JSX.Element {
                 </div>
             </div>
             <div>
-                <p>Copyright &copy; 2026 コミックつくば！準備会 All Rights Reserved.</p>
+                <p>Copyright &copy; 2025-{new Date().getFullYear()} コミックつくば！準備会 All Rights Reserved.</p>
             </div>
         </footer>
     );

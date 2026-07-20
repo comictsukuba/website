@@ -11,8 +11,8 @@ export default function Route() {
 			<h1 className="text-3xl font-bold">お問い合わせ</h1>
 			<p className="mt-8">
 				ご連絡は準備会メールアドレスへ（
-				<a className="underline" href="mailto:info@comic-tsukuba.com">
-					info@comic-tsukuba.com
+				<a className="underline">
+					info[あっと]comic-tsukuba.com
 				</a>
 				）
 			</p>

@@ -1,11 +1,12 @@
 import { useState, type JSX } from "react";
-import ctb1Img from "~/assets/CTB1/ctb1.png";
+import ctb1Img from "~/assets/CTB1/ctb1_key.png";
+import ctb1KeyOgImg from "~/assets/CTB1/ctb1_key_og.png";
+import ctb1FlyerBackImg from "~/assets/CTB1/ctb1_flyer_back.png";
 import illust1Img from "~/assets/CTB1/illust1.jpeg";
 import illust2Img from "~/assets/CTB1/illust2.jpeg";
 
 // 画像の縦方向の切り抜き位置を微調整したい場合は、以下の値を書き換えてください。
 // 例: "center top" (上端基準), "center 20%" (上から20%の位置を基準), "center 50%" (中央基準)
-const IMAGE_ALIGNMENT = "center 10%";
 
 export default function Index(): JSX.Element {
 	const [activeImage, setActiveImage] = useState<string | null>(null);
@@ -15,7 +16,7 @@ export default function Index(): JSX.Element {
 			{/* メタデータ -----✧ */}
 			<title>CTB1 アフターレポート ✧ コミックつくば！</title>
 			<meta name="description" content="コミックつくば！CTB1のアフターレポートです。"></meta>
-			<meta property="og:image" content="https://www.comic-tsukuba.com/pictures/logo.png"></meta>
+			<meta property="og:image" content={`https://www.comic-tsukuba.com${ctb1KeyOgImg}`}></meta>
 			<meta property="og:url" content="https://www.comic-tsukuba.com/events/CTB1"></meta>
 			<meta property="og:title" content="CTB1 アフターレポート"></meta>
 			<meta property="og:description" content="コミックつくば！CTB1のアフターレポートです。"></meta>
@@ -28,14 +29,23 @@ export default function Index(): JSX.Element {
 				<p className="text-fg-muted mt-3 text-lg font-medium">2026.07.20</p>
 			</div>
 
-			<div className="w-full h-auto overflow-hidden rounded-xl shadow-sm cursor-zoom-in">
-				<img 
-					src={ctb1Img} 
-					alt="CTB1" 
-					className="w-full h-auto object-cover max-h-[480px] transition-transform duration-300 hover:scale-[1.02]" 
-					style={{ objectPosition: IMAGE_ALIGNMENT }}
-					onClick={() => setActiveImage(ctb1Img)}
-				/>
+			<div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full h-auto">
+				<div className="overflow-hidden rounded-xl shadow-sm cursor-zoom-in">
+					<img 
+						src={ctb1Img} 
+						alt="CTB1 チラシ 表" 
+						className="w-full h-auto object-cover transition-transform hover:scale-[1.02]" 
+						onClick={() => setActiveImage(ctb1Img)}
+					/>
+				</div>
+				<div className="overflow-hidden rounded-xl shadow-sm cursor-zoom-in">
+					<img 
+						src={ctb1FlyerBackImg} 
+						alt="CTB1 チラシ 裏" 
+						className="w-full h-auto object-cover transition-transform hover:scale-[1.02]" 
+						onClick={() => setActiveImage(ctb1FlyerBackImg)}
+					/>
+				</div>
 			</div>
 
 			<article className="max-w-none text-fg leading-relaxed space-y-8 text-lg">
@@ -142,7 +152,7 @@ export default function Index(): JSX.Element {
 					</p>
 					<p>
 						また、筑波大学構成員以外も出展者として募集し、より大規模な同人誌即売会を大学外で実施することを強く検討しております。
-						具体的な日程、場所が決まり次第、出展者募集や来場のご案内の情報を発信いたします。
+						具体的な日程、場所が決まり次第、出展者募集や来場のご案内に関する情報を発信いたします。
 						当Webサイト、および準備会公式SNSをご確認ください。
 					</p>
 				</div>
